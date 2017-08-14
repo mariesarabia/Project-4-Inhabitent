@@ -1,7 +1,6 @@
 .hero { 
     background-image: 
     linear-gradient(180deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
-    url('../../images/inhabitent-logo-full.svg'),
     url('../../images/home-hero.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
@@ -11,5 +10,18 @@
 .navigation-container {
     display: flex;
     width: 1120px;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    margin: auto;
+        li {
+            padding-left: 30px;
+            font-weight: 300;
+            font-style: normal;
+                a {
+                    color: $color__nav-reverse;
+                    
+                }
+        }
 }
 

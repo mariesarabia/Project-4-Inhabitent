@@ -4,7 +4,10 @@
 ?>
 
 <main class="main-container">
-    <section class="hero"></section>
+    <section class="hero">
+        <img src="images/logos/inhabitent-logo-full.svg";
+    </section>
+
     <section class="products-container">
     </section>
 </main>
