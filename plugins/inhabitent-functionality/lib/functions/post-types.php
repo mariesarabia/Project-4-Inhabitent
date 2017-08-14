@@ -9,6 +9,7 @@
 
 // Register Custom Post Type
 function inhabitent_cpt_product() {
+
     
         $labels = array(
             'name'                  => 'Products',
@@ -60,6 +61,9 @@ function inhabitent_cpt_product() {
             'show_in_rest'          => true,
         );
         register_post_type( 'product', $args );
+
+        //Clear Permalinks
+        flush_rewrite_rules();
     
     }
     add_action( 'init', 'inhabitent_cpt_product', 0 );
