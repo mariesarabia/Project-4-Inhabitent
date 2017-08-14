@@ -250,6 +250,20 @@ th {
   font-weight: bold;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Novecentosanswide';
+  src: url("Novecentosanswide-Normal.eot");
+  src: url("Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("Novecentosanswide-Normal.woff") format("woff"), url("Novecentosanswide-Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecentosanswide';
+  src: url("Novecentosanswide-DemiBold.eot");
+  src: url("Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("Novecentosanswide-DemiBold.woff") format("woff"), url("Novecentosanswide-DemiBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -259,7 +273,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: Merriweather, sans-serif;
+  font-family: Merriweather, serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -448,15 +462,19 @@ a {
 
 /* Menus */
 .main-navigation {
+  font-family: Novecentosanswide, sans-serif;
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: 100%;
+  text-transform: uppercase; }
   .main-navigation ul {
     display: none;
     list-style: none;
-    margin: 0;
-    padding-left: 0; }
+    margin: 0; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -471,7 +489,8 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
-        width: 200px; }
+        width: 200px;
+        padding-left: 50px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -520,26 +539,41 @@ a {
 
 .navigation-container {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 1120px; }
 
 .site-info {
-  font-family: Merriweather, sans-serif;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
   background-image: url("../../images/dark-wood.png");
-  height: 376px;
-  background-size: repeat; }
+  background-size: 512px 512px; }
 
 .site-info h3 {
+  font-family: Novecentosanswide, sans-serif;
   color: #d99054;
   text-transform: uppercase; }
 
 .footer-info-container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
+  -ms-flex-direction: column wrap;
+      flex-direction: column wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.contact {
+  width: 25%; }
+
+.hours {
+  width: 25%; }
 
 .footer_logo {
-  background-image: url("../../images/inhabitent-logo-text-dark.svg"); }
+  background-image: url("../../images/logos/inhabitent-logo-text-dark.svg"); }
+
+.copyright {
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # Accessibility

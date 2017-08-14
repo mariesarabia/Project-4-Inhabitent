@@ -3,9 +3,10 @@
     get_header();
 ?>
 
-<section class="hero"></section>
-<section class="products-container">
-
-</section>
+<main class="main-container">
+    <section class="hero"></section>
+    <section class="products-container">
+    </section>
+</main>
 
 <?php get_footer(); ?>

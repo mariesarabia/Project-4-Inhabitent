@@ -42,4 +42,26 @@
 	font-style: italic;
 }
 
-// 
+//
+
+@font-face {
+	font-family: 'Novecentosanswide';
+	src: url('Novecentosanswide-Normal.eot');
+	src: url('Novecentosanswide-Normal.eot?#iefix') format('embedded-opentype'),
+		url('Novecentosanswide-Normal.woff') format('woff'),
+		url('Novecentosanswide-Normal.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Novecentosanswide';
+	src: url('Novecentosanswide-DemiBold.eot');
+	src: url('Novecentosanswide-DemiBold.eot?#iefix') format('embedded-opentype'),
+		url('Novecentosanswide-DemiBold.woff') format('woff'),
+		url('Novecentosanswide-DemiBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+

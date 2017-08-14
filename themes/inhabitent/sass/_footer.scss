@@ -1,20 +1,37 @@
 .site-info {
     font-family: $font__main;
+    font-weight: 300;
+	font-style: normal;
+    color: $color__background-body;
     background-image: url('../../images/dark-wood.png');
-    height: 376px;
-    background-size: repeat;
+    background-size: 512px 512px;
 }
 
 .site-info h3 {
+    font-family: $font__header;
     color: $color_footer_header;
     text-transform: uppercase;
 }
 
 .footer-info-container {
     display: flex; 
-    flex-direction: row;
+    flex-direction: column wrap;
+    justify-content: space-between;
+}
+
+
+.contact {
+    width: 25%;
+}
+
+.hours {
+    width: 25%;
 }
 
 .footer_logo {
-    background-image: url('../../images/inhabitent-logo-text-dark.svg');
+    background-image: url('../../images/logos/inhabitent-logo-text-dark.svg');
+}
+
+.copyright {
+    text-align: center;
 }
