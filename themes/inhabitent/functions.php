@@ -1,10 +1,10 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * Inhabitent Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 if ( ! function_exists( 'red_starter_setup' ) ) :
@@ -94,6 +94,13 @@ function inhabitent_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
+
+function remove_theme_submenu()
+{
+	remove_submenu_page( 'themes.php', 'theme-editor.php' );
+	remove_submenu_page( 'plugins.php','plugin-editor.php' );
+}
+add_action('admin_init', 'remove_theme_submenu', 102);
 
 /**
  * Custom template tags for this theme.
