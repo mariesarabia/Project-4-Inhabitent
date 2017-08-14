@@ -2,7 +2,7 @@
 /** 
 * Template Name: About Page
 *
-* @package Red_Starter_Theme
+* @package Inhabitent_Theme
 */
 
 get_header(); ?>
@@ -13,7 +13,7 @@ get_header(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <header class="entry-header custom-hero">
                 <div class="container">
-                    <?php the_title( 'h1 class="entry-title">', '</h1>' ); ?>
+                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                 </div>
             </header>
 

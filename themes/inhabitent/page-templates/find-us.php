@@ -2,7 +2,7 @@
 /** 
 * Template Name: Find Us Page
 *
-* @package Red_Starter_Theme
+* @package Inhabitent_Theme
 */
 
 get_header(); ?>
