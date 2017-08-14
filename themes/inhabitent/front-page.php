@@ -3,7 +3,7 @@
     get_header();
 ?>
 
-<section class="hero">aldjflajdflajdflajdlfj</section>
+<section class="hero"></section>
 <section class="products-container">
 
 </section>

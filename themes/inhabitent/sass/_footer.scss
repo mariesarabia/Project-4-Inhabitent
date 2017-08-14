@@ -1,6 +1,20 @@
 .site-info {
-    background-image: url(wp-content/themes/inhabitent/images/dark-wood.png);
-    width: 100%;
-    height: 355px;
-    }
-    
+    font-family: $font__main;
+    background-image: url('../../images/dark-wood.png');
+    height: 376px;
+    background-size: repeat;
+}
+
+.site-info h3 {
+    color: $color_footer_header;
+    text-transform: uppercase;
+}
+
+.footer-info-container {
+    display: flex; 
+    flex-direction: row;
+}
+
+.footer_logo {
+    background-image: url('../../images/inhabitent-logo-text-dark.svg');
+}
