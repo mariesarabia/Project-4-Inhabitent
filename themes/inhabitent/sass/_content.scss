@@ -48,14 +48,35 @@
 	display: block;
 }
 
+//additions// 
 
-//Added by me
-
-.main-container {
-	padding-top: 0px;
+.hero { 
+    background-image: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
+    url('../../images/home-hero.jpg');
+    background-size: cover cover;
+    background-repeat: no-repeat; 
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
 		img {
 			width: 275px; 
 			height: 275px;
-			
 		}
+}
+
+//about
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1120px;
+}
+
+.entry-content h2 {
+		font-family: $font__header;
+		text-transform: uppercase;
+		text-align: center;
 }

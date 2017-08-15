@@ -5,6 +5,7 @@
     color: $color__background-body;
     background-image: url('../../images/dark-wood.png');
     background-size: 512px 512px;
+    height: 355px;
 }
 
 .site-info h3 {
@@ -14,9 +15,10 @@
 }
 
 .footer-info-container {
+    width: 1120px;
     display: flex; 
-    flex-direction: column wrap;
     justify-content: space-between;
+    margin: auto;
 }
 
 
@@ -28,10 +30,16 @@
     width: 25%;
 }
 
-.footer_logo {
-    background-image: url('../../images/logos/inhabitent-logo-text-dark.svg');
-}
-
 .copyright {
     text-align: center;
+    height: 28px;
+}
+
+.text_logo {
+    width: 560px;
+    height: 58px;
+    img {
+        max-width: 50%;
+    }
+    
 }
