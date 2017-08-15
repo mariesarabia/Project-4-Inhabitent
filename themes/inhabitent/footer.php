@@ -20,9 +20,9 @@
 						</div>
 						<div class="hours">
 							<h3>Business Hours</h3>
-							<p>Monday-Friday: 9am to 5pm</p>
-							<p>Saturday: 10am to 2pm</p>
-							<p>Sunday: Closed</p>
+							<p><span class="day">Monday-Friday:</span> 9am to 5pm</p>
+							<p><span class="day">Saturday:</span> 10am to 2pm</p>
+							<p><span class="day">Sunday:</span> Closed</p>
 						</div>
 						<div class="text_logo">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" class="logo" alt="Inhabitent logo text";>

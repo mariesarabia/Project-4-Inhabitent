@@ -54,7 +54,7 @@
     background-image: 
     linear-gradient(180deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
     url('../../images/home-hero.jpg');
-    background-size: cover cover;
+    background-size: cover, cover;
     background-repeat: no-repeat; 
 	height: 100vh;
 	display: flex;
@@ -79,4 +79,9 @@
 		font-family: $font__header;
 		text-transform: uppercase;
 		text-align: center;
+}
+
+.day {
+	font-weight: bold;
+	font-style: normal;
 }

@@ -16,6 +16,7 @@
 
 .footer-info-container {
     width: 1120px;
+    height: 278px;
     display: flex; 
     justify-content: space-between;
     margin: auto;
@@ -24,22 +25,32 @@
 
 .contact {
     width: 25%;
+    margin: 3rem 0;
 }
 
 .hours {
     width: 25%;
+    margin: 3rem 0;
 }
 
 .copyright {
     text-align: center;
     height: 28px;
+    font-family: $font__header;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 1.5rem 0;
 }
 
 .text_logo {
     width: 560px;
     height: 58px;
+    text-align: right;
+    margin: 3rem 0;
     img {
         max-width: 50%;
+        height: auto;
     }
     
 }

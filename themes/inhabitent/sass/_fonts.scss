@@ -7,7 +7,7 @@
 	src: url('../fonts/Merriweather-LightItalic.eot');
 	src: url('../fonts/Merriweather-LightItalic.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/Merriweather-LightItalic.woff') format('woff'),
-		url('../fonts/Merriweather-LightItalic.ttf') format('truetype');
+		url('vMerriweather-LightItalic.ttf') format('truetype');
 	font-weight: 300;
 	font-style: italic;
 }
@@ -24,7 +24,7 @@
 
 @font-face {
 	font-family: 'Merriweather';
-	src: url('../fonts/Merriweather-Light.eot');
+	src: url('Merriweather-Light.eot');
 	src: url('../fonts/Merriweather-Light.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/Merriweather-Light.woff') format('woff'),
 		url('../fonts/Merriweather-Light.ttf') format('truetype');
@@ -46,20 +46,20 @@
 
 @font-face {
 	font-family: 'Novecentosanswide';
-	src: url('Novecentosanswide-Normal.eot');
-	src: url('Novecentosanswide-Normal.eot?#iefix') format('embedded-opentype'),
-		url('Novecentosanswide-Normal.woff') format('woff'),
-		url('Novecentosanswide-Normal.ttf') format('truetype');
+	src: url('../fonts/Novecentosanswide-Normal.eot');
+	src: url('../fonts/Novecentosanswide-Normal.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Novecentosanswide-Normal.woff') format('woff'),
+		url('../fonts/Novecentosanswide-Normal.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Novecentosanswide';
-	src: url('Novecentosanswide-DemiBold.eot');
-	src: url('Novecentosanswide-DemiBold.eot?#iefix') format('embedded-opentype'),
-		url('Novecentosanswide-DemiBold.woff') format('woff'),
-		url('Novecentosanswide-DemiBold.ttf') format('truetype');
+	src: url('../fonts/Novecentosanswide-DemiBold.eot');
+	src: url('../fonts/Novecentosanswide-DemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Novecentosanswide-DemiBold.woff') format('woff'),
+		url('../fonts/Novecentosanswide-DemiBold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
