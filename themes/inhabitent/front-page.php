@@ -18,14 +18,13 @@ get_header(); ?>
 			<section class="latest-posts">
 			<div class="container">
 				<h2>Inhabitent Journal</h2>
-				<ul>
-						<li>
 		<?php
 		$args = array( 
 			'numberposts' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
 			$journal_posts = get_posts( $args ); // returns an array of posts
 		?>
-					
+					<ul>
+						<li>
 							<div class="thumbnail">
 								<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 								<?php if ( has_post_thumbnail() ) : ?>

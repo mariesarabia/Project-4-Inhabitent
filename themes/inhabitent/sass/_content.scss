@@ -103,3 +103,41 @@
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
+.product-image-wrapper {
+	width: 48%;
+}
+
+.single.single-post .site-content {
+	display: flex; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 1120px;
+	padding-top: 50px;
+}
+
+.single.single-post .content-area {
+	width: 73%;
+}
+
+.single.single-post .entry-header img {
+	max-width: 100%;
+	height: auto;
+}
+
+.single.single-post .entry-meta, {
+	background-color: $color__link;
+}
+
+.single.single-post .entry-title {
+	background-color: $color__link;
+}
+
+.widget-area {
+	width: 27%;
+	padding-left: 5%;
+		h2 {
+			font-family: $font__header;
+			text-transform: uppercase;
+		}
+}

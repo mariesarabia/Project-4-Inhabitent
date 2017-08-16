@@ -741,6 +741,37 @@ a {
   text-decoration: none;
   text-transform: uppercase; }
 
+.product-image-wrapper {
+  width: 48%; }
+
+.single.single-post .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 50px; }
+
+.single.single-post .content-area {
+  width: 73%; }
+
+.single.single-post .entry-header img {
+  max-width: 100%;
+  height: auto; }
+
+.single.single-post .entry-meta {
+  background-color: #248A83; }
+
+.single.single-post .entry-title {
+  background-color: #248A83; }
+
+.widget-area {
+  width: 27%;
+  padding-left: 5%; }
+  .widget-area h2 {
+    font-family: Novecentosanswide, sans-serif;
+    text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
