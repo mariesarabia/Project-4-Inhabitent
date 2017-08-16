@@ -12,21 +12,23 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<article id="post-<?php the_ID(); ?>" <php post_class(); ?>
+			<!-- <header class="entry-header"> -->
+				<?php if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail( 'large' ); ?>
+				<?php endif; ?>
+				<?php the_title( '<h1 class="entry-title">' , '</h1>' ); ?>
+				<h3><?php echo CFS()->get( 'price' ); ?></h3>
+				<?php the_content(); ?>
+			<!-- </header> -->
 
-			<?php the_post_navigation(); ?>
+			
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+		<!-- <div class="entry-content">
+		<!-- <?php the_content(); ?> -->
 
-		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
