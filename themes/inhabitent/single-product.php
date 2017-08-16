@@ -12,23 +12,29 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <php post_class(); ?>
-			<!-- <header class="entry-header"> -->
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		
+			<div class="product-image-wrapper">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 				<?php endif; ?>
-				<?php the_title( '<h1 class="entry-title">' , '</h1>' ); ?>
-				<h3><?php echo CFS()->get( 'price' ); ?></h3>
-				<?php the_content(); ?>
-			<!-- </header> -->
+			</div>
 
-			
+		<div class="product-content-wrapper">	
+			<header class="entry-header">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header>
+			<div class="entry-content">
+				<p class="price"><?php echo CFS()->get( 'price' ); ?></p>
+				<div class="entry-content">
+				<p><?php the_content(); ?></p>
+				</div>
+			</div> 
+		</div>
 
-		<!-- <div class="entry-content">
-		<!-- <?php the_content(); ?> -->
+		<?php endwhile; ?>
 
-
-		</main><!-- #main -->
+		</main><!-- #content -->
 	</div><!-- #primary -->
-
+	
 <?php get_footer(); ?>

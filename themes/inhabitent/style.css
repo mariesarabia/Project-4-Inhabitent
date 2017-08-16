@@ -725,6 +725,22 @@ a {
   font-weight: bold;
   font-style: normal; }
 
+.frontpage-entries {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row wrap;
+      flex-direction: row wrap; }
+
+.container h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif; }
+
+.post-info {
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
