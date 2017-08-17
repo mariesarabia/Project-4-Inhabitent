@@ -14,23 +14,25 @@ get_header(); ?>
 
 			<header class="page-header">
 			<h1 class="page-title">Shop Stuff</h1>
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+			<ul><?php
+					// the_archive_title( '<h1 class="page-title">', '</h1>' );
 					$terms = get_terms( array(
 						'taxonomy' => 'product-type',
 						'hide_empty' => false,
 					) );
 					if ( ! empty( $terms ) && ! is_wp_error( $terms )) :
 						foreach ( $terms as $term ) : ?>
-						<a href="<?php echo get_term_link( $term ); ?>">
+						
+					<li><a href="<?php echo get_term_link( $term ); ?>">
 							<?php echo $term->name; ?>
-					</a>
+					</a></li>
+					
 					<?php endforeach; 
 
 					endif;
 					
 				?>
-				
+				</ul>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>

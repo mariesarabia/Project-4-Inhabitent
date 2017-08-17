@@ -198,3 +198,50 @@
 .single-product .product-content-wrapper {
 	width: 48%;
 }
+
+//SHOP STUFF PAGE 
+
+.archive .page-title {
+	font-family: $font__header;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+//Front Page Journal
+
+.home.blog .container {
+		h2 {
+			text-align: center;
+		}
+		ul {
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+				li {
+					flex: 0 1 32%;
+					border: 1px solid black;
+					text-transform: uppercase;
+					font-family: $font__main;
+						.post-info {
+							font-size: 0.75rem;
+							padding: 0.75rem;
+						}
+						h3 {
+							font-size: 1.3rem;
+							font-family: $font__header;
+							line-height: 1.5rem;
+							a {
+								text-decoration: none;
+								color: $color__link;
+							}
+						}
+						img {
+							height: 250px;
+							max-width: 100%;
+							position: relative;
+						}
+				}
+		}
+}

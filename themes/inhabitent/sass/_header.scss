@@ -1,5 +1,11 @@
 .site-header {
     margin-top: 0px;
+        
+}
+
+.site-header.reverse-header h1 {
+        background-image: url('../../images/logos/inhabitent-logo-tent-white.svg');
+        background-size: 50px 33px;
 }
 
 // .navigation-container {
@@ -20,10 +26,14 @@
 //         }
 // }
 
-.menu-main-navigation-container {
+.site-header .container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
         li {
             padding-left: 30px;
         }
+        
 }
+
 

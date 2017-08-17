@@ -535,10 +535,18 @@ a {
 .site-header {
   margin-top: 0px; }
 
-.menu-main-navigation-container {
+.site-header.reverse-header h1 {
+  background-image: url("../../images/logos/inhabitent-logo-tent-white.svg");
+  background-size: 50px 33px; }
+
+.site-header .container {
   display: -ms-flexbox;
-  display: flex; }
-  .menu-main-navigation-container li {
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .site-header .container li {
     padding-left: 30px; }
 
 .site-info {
@@ -824,6 +832,44 @@ a {
 
 .single-product .product-content-wrapper {
   width: 48%; }
+
+.archive .page-title {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem; }
+
+.home.blog .container h2 {
+  text-align: center; }
+
+.home.blog .container ul {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .home.blog .container ul li {
+    -ms-flex: 0 1 32%;
+        flex: 0 1 32%;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: Merriweather, serif; }
+    .home.blog .container ul li .post-info {
+      font-size: 0.75rem;
+      padding: 0.75rem; }
+    .home.blog .container ul li h3 {
+      font-size: 1.3rem;
+      font-family: Novecentosanswide, sans-serif;
+      line-height: 1.5rem; }
+      .home.blog .container ul li h3 a {
+        text-decoration: none;
+        color: #248A83; }
+    .home.blog .container ul li img {
+      height: 250px;
+      max-width: 100%;
+      position: relative; }
 
 /*--------------------------------------------------------------
 # Media
