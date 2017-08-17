@@ -211,6 +211,9 @@
 //Front Page Journal
 
 .home.blog .container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 1120px;
 		h2 {
 			text-align: center;
 		}
@@ -219,11 +222,16 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			width: 1120px;
+			padding-left: 0;
+			margin-left: 0;
+			margin-bottom: 0;
 				li {
 					flex: 0 1 32%;
 					border: 1px solid black;
 					text-transform: uppercase;
 					font-family: $font__main;
+					position: relative;
 						.post-info {
 							font-size: 0.75rem;
 							padding: 0.75rem;
@@ -232,9 +240,10 @@
 							font-size: 1.3rem;
 							font-family: $font__header;
 							line-height: 1.5rem;
+							margin-top: 0;
+							letter-spacing: 2px;
 							a {
 								text-decoration: none;
-								color: $color__link;
 							}
 						}
 						img {
@@ -244,4 +253,23 @@
 						}
 				}
 		}
+}
+
+.home.blog .site-content {
+	// text-align: center;
+}
+
+.home .read-button {
+	border: 1px solid $color__border;
+	position: absolute;
+	left: 0.75rem;
+	bottom: 0.75rem;
+	font-family: $font__header;
+	font-size: 0.9rem;
+	padding: 0.75rem 1.5rem;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: $color__link;
 }
