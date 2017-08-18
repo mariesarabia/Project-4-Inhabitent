@@ -1,32 +1,43 @@
 <?php
+/**
+ * The template for displaying archive pages.
+ *
+ * @package RED_Starter_Theme
+ */
 
 get_header(); ?>
 
-<?php
-		$args = array( 
-			'numberposts' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
-			$journal_posts = get_posts( $args ); // returns an array of posts
-		?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-							<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-							
-		
-							<div class="thumbnail">
-								<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'large' ); ?>
-								<?php endif; ?>
-							</div>
-							<div class="post-info">
-								<span class="publication-date"><?php the_date(); ?></span> / <?php comments_number ( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php the_author(); ?>  
-								<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							</div>
-							<a class="read-button" href="http://tent.academy.red/2016/04/van-camping-photo-contest/">Read More</a>
-				
-				
-					
-								
-					<?php endforeach; wp_reset_postdata(); ?>
+		<?php if ( have_posts() ) : ?>
 
+			<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
+
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php
+					get_template_part( 'template-parts/content' );
+				?>
+
+			<?php endwhile; ?>
+
+			<?php the_posts_navigation(); ?>
+
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

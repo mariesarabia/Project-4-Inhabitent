@@ -553,6 +553,12 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
 .site-info {
   font-family: Merriweather, serif;
   font-weight: 300;
@@ -734,10 +740,23 @@ a {
   margin-right: auto;
   width: 1120px; }
 
-.entry-content h2 {
+.page-template-about .entry-title {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.page-template-about .entry-content h2 {
   font-family: Novecentosanswide, sans-serif;
   text-transform: uppercase;
   text-align: center; }
+
+.page-template-about .entry-header .container {
+  margin-left: auto;
+  margin-right: auto; }
 
 .day {
   font-weight: bold;
@@ -781,7 +800,8 @@ a {
     max-width: 75%;
     font-family: Novecentosanswide, sans-serif;
     text-transform: uppercase;
-    color: #fff; }
+    color: #fff;
+    position: absolute; }
   .single.single-post .entry-header img {
     max-width: 100%;
     height: auto; }
@@ -845,16 +865,14 @@ a {
   text-align: center;
   font-size: 2.5rem; }
 
-f
 .home.blog .container {
   margin-right: auto;
   margin-left: auto;
-  width: 1120px; }
-  f
-.home.blog .container h2 {
+  width: 1120px;
+  margin-bottom: 4.5rem; }
+  .home.blog .container h2 {
     text-align: center; }
-  f
-.home.blog .container ul {
+  .home.blog .container ul {
     list-style: none;
     display: -ms-flexbox;
     display: flex;
@@ -866,30 +884,29 @@ f
     padding-left: 0;
     margin-left: 0;
     margin-bottom: 0; }
-    f
-.home.blog .container ul li {
+    .home.blog .container ul li {
       -ms-flex: 0 1 32%;
           flex: 0 1 32%;
       border: 1px solid black;
       text-transform: uppercase;
       font-family: Merriweather, serif;
       position: relative; }
-      f
-.home.blog .container ul li .post-info {
+      .home.blog .container ul li .post-info {
         font-size: 0.75rem;
         padding: 0.75rem; }
-      f
-.home.blog .container ul li h3 {
+      .home.blog .container ul li h3 {
         font-size: 1.3rem;
         font-family: Novecentosanswide, sans-serif;
         line-height: 1.5rem;
         margin-top: 0;
-        letter-spacing: 2px; }
-        f
-.home.blog .container ul li h3 a {
-          text-decoration: none; }
-      f
-.home.blog .container ul li img {
+        letter-spacing: 2px;
+        margin-bottom: 3.75rem; }
+        .home.blog .container ul li h3 a {
+          text-decoration: none;
+          color: #248A83; }
+        .home.blog .container ul li h3 a:hover {
+          color: #404040; }
+      .home.blog .container ul li img {
         height: 250px;
         max-width: 100%;
         position: relative; }
@@ -903,6 +920,8 @@ f
   font-size: 0.9rem;
   padding: 0.75rem 1.5rem;
   text-decoration: none; }
+  .home .read-button a {
+    color: #000; }
 
 .button:hover {
   background-color: #248A83; }
