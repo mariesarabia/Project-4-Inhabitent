@@ -13,9 +13,9 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-			<h1 class="page-title">Shop Stuff</h1>
+			<!-- <h1 class="page-title">Shop Stuff</h1> -->
 			<ul><?php
-					// the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					$terms = get_terms( array(
 						'taxonomy' => 'product-type',
 						'hide_empty' => false,

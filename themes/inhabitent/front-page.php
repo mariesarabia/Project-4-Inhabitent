@@ -14,7 +14,24 @@ get_header(); ?>
             <section class="hero">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" class="logo" alt="Inhabitent full logo";>
             </section>
-				
+
+<h2 class="text-uppercase text-center">shop stuff</h2>
+
+		<?php
+		$terms = get_terms( 'product-type' );
+		if ( !empty( $terms ) && !is_wp_error ( $terms )) : 
+		?>
+		<div class="container">
+			<?php foreach( $terms as $term ) : ?>
+				<img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';  ?>">
+				<div class="category-item">
+					<p><?php echo $term->description; ?></p>
+					<a class="category-item-link" href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?> stuff</a>
+				</div>
+			<?php endforeach; ?>
+		</div>
+		<?php endif;?>
+		
 		
 			<section class="latest-posts">
 			<div class="container">
