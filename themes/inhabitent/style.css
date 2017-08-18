@@ -995,16 +995,16 @@ object {
   text-transform: uppercase;
   font-family: Novecentosanswide, sans-serif; }
 
-product-type-box {
+.product-type-grid {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
   text-align: center;
   width: 1120px; }
-  product-type-box .category-item {
+  .product-type-grid .cproduct-type-box {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
-  product-type-box .img {
+  .product-type-grid .img {
     width: 70px;
     height: 70px; }

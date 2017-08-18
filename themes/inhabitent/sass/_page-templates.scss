@@ -93,12 +93,12 @@
 
 //SHOP STUFF//
 
-product-type-box {
+.product-type-grid {
     display: flex;
     justify-content: space-between;
     text-align: center;
     width: 1120px;
-        .category-item {
+        .cproduct-type-box {
             flex-basis: 25%;
         }
         .img {
