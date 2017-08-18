@@ -50,24 +50,7 @@
 
 //additions// 
 
-.hero { 
-    background-image: 
-    linear-gradient(180deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
-    url('../../images/home-hero.jpg');
-    background-size: cover, cover;
-    background-repeat: no-repeat; 
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-direction: column;
-		img {
-			width: 275px; 
-			height: 275px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-}
+
 
 //ABOUT PAGE 
 
@@ -109,18 +92,6 @@
 	font-weight: bold;
 	font-style: normal;
 }
-
-.frontpage-entries {
-	display: flex;
-	flex-direction: row wrap;
-}
-
-.container h2 {
-	font-size: 2.4rem;
-	text-transform: uppercase;
-	font-family: $font__header;
-}
-
 
 .post-info {
 	font-size: 2rem;
@@ -235,56 +206,7 @@
 
 //Front Page Journal
 
-.home.blog .container {
-	margin-right: auto;
-	margin-left: auto;
-	width: 1120px;
-	margin-bottom: 4.5rem;
-		h2 {
-			text-align: center;
-		}
-		ul {
-			list-style: none;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			width: 1120px;
-			padding-left: 0;
-			margin-left: 0;
-			margin-bottom: 0;
-				li {
-					flex: 0 1 32%;
-					border: 1px solid black;
-					text-transform: uppercase;
-					font-family: $font__main;
-					position: relative;
-						.post-info {
-							font-size: 0.75rem;
-							padding: 0.75rem;
-						}
-						h3 {
-							font-size: 1.3rem;
-							font-family: $font__header;
-							line-height: 1.5rem;
-							margin-top: 0;
-							letter-spacing: 2px;
-							margin-bottom: 3.75rem;
-							a {
-								text-decoration: none;
-								color: $color__link;
-							}
-							a:hover {
-								color: $color__text-main;
-							}
-						}
-						img {
-							height: 250px;
-							max-width: 100%;
-							position: relative;
-						}
-				}
-		}
-}
+
 
 
 

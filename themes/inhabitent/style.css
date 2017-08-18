@@ -716,25 +716,6 @@ a {
 .bypostauthor {
   display: block; }
 
-.hero {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
-  background-size: cover, cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  .hero img {
-    width: 275px;
-    height: 275px;
-    margin-left: auto;
-    margin-right: auto; }
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -761,17 +742,6 @@ a {
 .day {
   font-weight: bold;
   font-style: normal; }
-
-.frontpage-entries {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row wrap;
-      flex-direction: row wrap; }
-
-.container h2 {
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  font-family: Novecentosanswide, sans-serif; }
 
 .post-info {
   font-size: 2rem;
@@ -865,52 +835,6 @@ a {
   text-align: center;
   font-size: 2.5rem; }
 
-.home.blog .container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 1120px;
-  margin-bottom: 4.5rem; }
-  .home.blog .container h2 {
-    text-align: center; }
-  .home.blog .container ul {
-    list-style: none;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
-    width: 1120px;
-    padding-left: 0;
-    margin-left: 0;
-    margin-bottom: 0; }
-    .home.blog .container ul li {
-      -ms-flex: 0 1 32%;
-          flex: 0 1 32%;
-      border: 1px solid black;
-      text-transform: uppercase;
-      font-family: Merriweather, serif;
-      position: relative; }
-      .home.blog .container ul li .post-info {
-        font-size: 0.75rem;
-        padding: 0.75rem; }
-      .home.blog .container ul li h3 {
-        font-size: 1.3rem;
-        font-family: Novecentosanswide, sans-serif;
-        line-height: 1.5rem;
-        margin-top: 0;
-        letter-spacing: 2px;
-        margin-bottom: 3.75rem; }
-        .home.blog .container ul li h3 a {
-          text-decoration: none;
-          color: #248A83; }
-        .home.blog .container ul li h3 a:hover {
-          color: #404040; }
-      .home.blog .container ul li img {
-        height: 250px;
-        max-width: 100%;
-        position: relative; }
-
 .home .read-button {
   border: 1px solid #000;
   position: absolute;
@@ -990,3 +914,97 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.hero {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
+  background-size: cover, cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .hero img {
+    width: 275px;
+    height: 275px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.journal-container h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif; }
+
+.home.blog .journal-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1120px;
+  margin-bottom: 4.5rem; }
+  .home.blog .journal-container h2 {
+    text-align: center; }
+  .home.blog .journal-container ul {
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 1120px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0; }
+    .home.blog .journal-container ul li {
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+      border: 1px solid black;
+      text-transform: uppercase;
+      font-family: Merriweather, serif;
+      position: relative; }
+      .home.blog .journal-container ul li .post-info {
+        font-size: 0.75rem;
+        padding: 0.75rem; }
+      .home.blog .journal-container ul li h3 {
+        font-size: 1.3rem;
+        font-family: Novecentosanswide, sans-serif;
+        line-height: 1.5rem;
+        margin-top: 0;
+        letter-spacing: 2px;
+        margin-bottom: 3.75rem; }
+        .home.blog .journal-container ul li h3 a {
+          text-decoration: none;
+          color: #248A83; }
+        .home.blog .journal-container ul li h3 a:hover {
+          color: #404040; }
+      .home.blog .journal-container ul li img {
+        height: 250px;
+        max-width: 100%;
+        position: relative; }
+
+.frontpage-entries {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row wrap;
+      flex-direction: row wrap; }
+
+.shop-heading {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif; }
+
+product-type-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+  width: 1120px; }
+  product-type-box .category-item {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  product-type-box .img {
+    width: 70px;
+    height: 70px; }
