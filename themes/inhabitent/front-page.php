@@ -29,10 +29,10 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';  ?>">
 				<p><?php echo $term->description; ?></p>
 				<a class="category-item-link" href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?> stuff</a>
-		</div>
+			</div>
 		</div>
 	<?php endforeach; ?>
-		</div>
+	</div>
 	<?php endif;?>
 </section>
 		

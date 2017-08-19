@@ -104,7 +104,7 @@
 }
 
 //2-column layout
-.page .site-content, 
+.page-template-default .site-content, 
 .blog .site-content, 
 .single .site-content {
 	display: flex; 
@@ -131,7 +131,7 @@
 
 //FIND US PAGE
 
-.page {
+.page-template-default {
 	h2 {
 		font-family: $font__header;
 		color: $color_header;
@@ -190,6 +190,37 @@
 //green headline box 
 .post .entry-title {
 	background-color: $color__link;
+}
+
+//SHOP STUFF PAGE
+
+.post-type-archive-product .page-header {
+	border-bottom: 1px dashed $color_rule;
+	margin-bottom: 3rem;
+}
+
+.product-type-list {
+	font-size: 1.2rem;
+	font-family: $font__header;
+	text-transform: uppercase;
+	margin-left: 0;
+	padding: 0;
+	text-align: center;
+		ul {
+			
+		}
+		li {
+			list-style: none;
+			display: inline;
+			margin: 0 1.5rem;
+				p {
+					margin-bottom: 1.5rem;
+				}
+		}
+		a {
+			text-decoration: none;
+			color: $color__link;
+		}
 }
 
 

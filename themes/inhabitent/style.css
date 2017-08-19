@@ -773,7 +773,7 @@ a {
 .about .site-content {
   padding-top: 0; }
 
-.page .site-content,
+.page-template-default .site-content,
 .blog .site-content,
 .single .site-content {
   display: -ms-flexbox;
@@ -781,38 +781,38 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
-  .page .site-content .content-area,
+  .page-template-default .site-content .content-area,
   .blog .site-content .content-area,
   .single .site-content .content-area {
     width: 73%;
     border-right: 1px solid #e1e1e1; }
-  .page .site-content .widget-area,
+  .page-template-default .site-content .widget-area,
   .blog .site-content .widget-area,
   .single .site-content .widget-area {
     width: 27%;
     padding-left: 5%; }
-    .page .site-content .widget-area h2,
+    .page-template-default .site-content .widget-area h2,
     .blog .site-content .widget-area h2,
     .single .site-content .widget-area h2 {
       font-family: Novecentosanswide, sans-serif;
       text-transform: uppercase;
       font-size: 1.5rem; }
-    .page .site-content .widget-area a,
+    .page-template-default .site-content .widget-area a,
     .blog .site-content .widget-area a,
     .single .site-content .widget-area a {
       text-decoration: none; }
 
-.page h2 {
+.page-template-default h2 {
   font-family: Novecentosanswide, sans-serif;
   color: #2f1339;
   text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: 2px; }
 
-.page .content-area {
+.page-template-default .content-area {
   padding-right: 5%; }
 
-.page h1 {
+.page-template-default h1 {
   text-transform: uppercase;
   font-family: Novecentosanswide, sans-serif;
   font-size: 2.5rem; }
@@ -846,6 +846,27 @@ a {
 
 .post .entry-title {
   background-color: #248A83; }
+
+.post-type-archive-product .page-header {
+  border-bottom: 1px dashed #e1e1e1;
+  margin-bottom: 3rem; }
+
+.product-type-list {
+  font-size: 1.2rem;
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  margin-left: 0;
+  padding: 0;
+  text-align: center; }
+  .product-type-list li {
+    list-style: none;
+    display: inline;
+    margin: 0 1.5rem; }
+    .product-type-list li p {
+      margin-bottom: 1.5rem; }
+  .product-type-list a {
+    text-decoration: none;
+    color: #248A83; }
 
 .single-product .product-content-wrapper {
   width: 48%; }

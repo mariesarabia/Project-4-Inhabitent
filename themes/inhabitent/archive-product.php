@@ -15,18 +15,17 @@ get_header(); ?>
 
 			<header class="page-header">
 			<!-- <h1 class="page-title">Shop Stuff</h1> -->
-			<ul><?php
+			<ul class="product-type-list"><?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					$terms = get_terms( array(
 						'taxonomy' => 'product-type',
 						'hide_empty' => false,
 					) );
+					
 					if ( ! empty( $terms ) && ! is_wp_error( $terms )) :
 						foreach ( $terms as $term ) : ?>
 						
-					<li><a href="<?php echo get_term_link( $term ); ?>">
-							<?php echo $term->name; ?>
-					</a></li>
+					<li><a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></li>
 					
 					<?php endforeach; 
 
@@ -55,5 +54,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
