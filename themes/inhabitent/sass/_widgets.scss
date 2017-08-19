@@ -9,9 +9,31 @@
 	select {
 		max-width: 100%;
 	}
+
+	h2 {
+		margin-bottom: 1.5rem;
+	}
+
+	i {
+		width: 20px;
+		margin-right: 0.5rem; 
+	}
+
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	a {
+		color: $color__link;
+	}
+
 }
 
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
 }
+
+

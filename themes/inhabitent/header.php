@@ -25,15 +25,18 @@
 					<h1 class="site-title screen-reader-text">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></h1></a>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="white-logo-tent" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg"></a>
 				</div><!-- .site-branding -->
-			</div>
+			
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="white-logo-tent" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg"></a>
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<?php get_search_form(); ?>
-			</nav><!-- #site-navigation -->
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+						
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<span class="search-toggle"><i class="fa fa-search"></i></span>
+						<?php get_search_form(); ?>
+				</nav><!-- #site-navigation -->
+			</div><!-- .container -->
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

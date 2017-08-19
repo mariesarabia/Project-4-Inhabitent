@@ -136,3 +136,12 @@ a {
 		width: 50%;
 	}
 }
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.search-field { display:none; }
+.search-submit { @extend .screen-reader-text; }
