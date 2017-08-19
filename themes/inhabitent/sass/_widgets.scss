@@ -17,6 +17,7 @@
 	i {
 		width: 20px;
 		margin-right: 0.5rem; 
+		line-height: 1.8rem;
 	}
 
 	ul {
@@ -27,6 +28,17 @@
 
 	a {
 		color: $color__link;
+		font-family: $font__main;
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	p {
+		margin-bottom: 0.5rem;
+	}
+
+	.day-of-week {
+
 	}
 
 }
@@ -35,5 +47,3 @@
 .widget_search .search-submit {
 	display: none;
 }
-
-

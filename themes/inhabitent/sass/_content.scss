@@ -129,6 +129,58 @@
 		}
 }
 
+//FIND US PAGE
+
+.page {
+	h2 {
+		font-family: $font__header;
+		color: $color_header;
+		text-transform: uppercase;
+		font-size: 2rem;
+		letter-spacing: 2px;
+	}
+	.content-area {
+		padding-right: 5%;
+	}
+	h1 {
+		text-transform: uppercase;
+		font-family: $font__header;
+		font-size: 2.5rem;
+	}
+}
+
+.wpcf7 .asterisk {
+	color: $color_asterisk;
+}
+
+.wpcf7 label {
+	text-transform: uppercase;
+	font-family: $font__header;
+	font-size: 1.1rem;
+	margin-bottom: 3rem;
+}
+
+.wpcf7 {
+	input, 
+	textarea {
+		padding: 0.3rem;
+		background-color: $color_background_screen;
+		border-radius: 0;
+	}
+	.wpcf7-submit {
+		padding: 0.75rem 1.5rem;
+		background-color: $color__link;
+		box-shadow: none;
+		color: $color__reverse;
+		font-family:$font__header;
+		text-transform: uppercase;
+		font-size: 0.9rem;
+		font-weight: 300;
+		font-style: normal;
+		border: none;
+	}
+}
+
 // .page .entry-content, 
 // .blog .entry-content, 
 // .single .entry-content {
@@ -139,6 +191,7 @@
 .post .entry-title {
 	background-color: $color__link;
 }
+
 
 
 

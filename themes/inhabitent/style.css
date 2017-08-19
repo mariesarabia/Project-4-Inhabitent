@@ -274,7 +274,7 @@ textarea {
   font-family: Merriweather, serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -681,13 +681,19 @@ a {
     margin-bottom: 1.5rem; }
   .widget i {
     width: 20px;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    line-height: 1.8rem; }
   .widget ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0; }
   .widget a {
-    color: #248A83; }
+    color: #248A83;
+    font-family: Merriweather, serif;
+    font-weight: 300;
+    font-style: normal; }
+  .widget p {
+    margin-bottom: 0.5rem; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -795,6 +801,48 @@ a {
     .blog .site-content .widget-area a,
     .single .site-content .widget-area a {
       text-decoration: none; }
+
+.page h2 {
+  font-family: Novecentosanswide, sans-serif;
+  color: #2f1339;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 2px; }
+
+.page .content-area {
+  padding-right: 5%; }
+
+.page h1 {
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 2.5rem; }
+
+.wpcf7 .asterisk {
+  color: #d99054; }
+
+.wpcf7 label {
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 3rem; }
+
+.wpcf7 input,
+.wpcf7 textarea {
+  padding: 0.3rem;
+  background-color: #f4f4f4;
+  border-radius: 0; }
+
+.wpcf7 .wpcf7-submit {
+  padding: 0.75rem 1.5rem;
+  background-color: #248A83;
+  box-shadow: none;
+  color: #fff;
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-style: normal;
+  border: none; }
 
 .post .entry-title {
   background-color: #248A83; }

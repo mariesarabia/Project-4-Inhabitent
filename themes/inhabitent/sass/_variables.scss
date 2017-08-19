@@ -5,8 +5,9 @@ $base__space-unit: 1.5rem;
 // Colors
 
 $color_rule: #e1e1e1;
-
-
+$color_header: #2f1339;
+$color_asterisk: #d99054;
+$color_background_screen: #f4f4f4;
 
 
 
@@ -35,5 +36,5 @@ $font__main: Merriweather, serif;
 $font__header: Novecentosanswide, sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
+$font__line-height-body: 1.75;
 $font__line-height-pre: 1.6;
