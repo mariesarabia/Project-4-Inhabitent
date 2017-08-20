@@ -251,13 +251,13 @@ th {
   font-style: italic; }
 
 @font-face {
-  font-family: 'Novecentosanswide-DemiBold';
+  font-family: 'Novecentosanswide';
   src: url("../../fonts/Novecentosanswide-DemiBold-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecentosanswide-Normal';
+  font-family: 'Novecentosanswide';
   src: url("../../fonts/Novecentosanswide-Normal-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
@@ -678,7 +678,8 @@ a {
   .widget select {
     max-width: 100%; }
   .widget h2 {
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    color: #2f1339; }
   .widget i {
     width: 20px;
     margin-right: 0.5rem;
@@ -991,7 +992,11 @@ object {
   font-size: 2.4rem;
   text-transform: uppercase;
   font-family: Novecentosanswide, sans-serif;
-  text-align: center; }
+  font-weight: normal;
+  font-style: normal;
+  color: #2f1339;
+  text-align: center;
+  letter-spacing: 2px; }
 
 .shop-container {
   margin-right: auto;
@@ -999,7 +1004,7 @@ object {
   width: 1120px;
   margin-bottom: 4.5rem; }
 
-.product-type-grid {
+.home .product-type-grid {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1007,38 +1012,40 @@ object {
   text-align: center;
   width: 1120px;
   padding: 0.75rem; }
-  .product-type-grid p {
+  .home .product-type-grid p {
     margin-bottom: 1.5rem; }
 
-.product-type-box {
+.home .product-type-box {
   -ms-flex: 0 1 23.5%;
       flex: 0 1 23.5%;
   width: 23.5%;
   border: 1px solid #c8c8c8;
   border-top-width: 5px;
   padding: 0.75rem; }
-  .product-type-box img {
+  .home .product-type-box img {
     width: 70px;
     height: 70px; }
-  .product-type-box a:hover,
-  .product-type-box a:visited {
+  .home .product-type-box a:hover,
+  .home .product-type-box a:visited {
     color: #fff; }
 
-.product-type-button {
+.home .product-type-button {
   background-color: #248A83;
   color: #fff;
   font-family: Novecentosanswide, sans-serif;
+  font-weight: normal;
+  font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem; }
 
-.journal-container {
+.home .journal-container {
   margin-right: auto;
   margin-left: auto;
   width: 1120px;
   margin-bottom: 4.5rem; }
-  .journal-container ul {
+  .home .journal-container ul {
     list-style: none;
     display: -ms-flexbox;
     display: flex;
@@ -1050,29 +1057,31 @@ object {
     padding-left: 0;
     margin-left: 0;
     margin-bottom: 0; }
-    .journal-container ul li {
+    .home .journal-container ul li {
       -ms-flex: 0 1 32%;
           flex: 0 1 32%;
       border: 1px solid black;
       text-transform: uppercase;
       font-family: Merriweather, serif;
       position: relative; }
-      .journal-container ul li .post-info {
+      .home .journal-container ul li .post-info {
         font-size: 0.75rem;
         padding: 0.75rem; }
-      .journal-container ul li h3 {
+      .home .journal-container ul li h3 {
         font-size: 1.3rem;
         font-family: Novecentosanswide, sans-serif;
+        font-weight: normal;
+        font-style: normal;
         line-height: 1.5rem;
         margin-top: 0;
         letter-spacing: 2px;
         margin-bottom: 3.75rem; }
-        .journal-container ul li h3 a {
+        .home .journal-container ul li h3 a {
           text-decoration: none;
           color: #248A83; }
-        .journal-container ul li h3 a:hover {
+        .home .journal-container ul li h3 a:hover {
           color: #404040; }
-      .journal-container ul li img {
+      .home .journal-container ul li img {
         height: 250px;
         max-width: 100%;
         position: relative; }
@@ -1101,6 +1110,46 @@ object {
   .product-type-grid .img {
     width: 70px;
     height: 70px; }
+
+.tax-product-type .page-title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-family: Novecentosanswide, sans-serif;
+  font-weight: bold;
+  font-style: normal; }
+
+.tax-product-type .taxonomy-description {
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 1.5rem; }
+
+.product-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.product-box {
+  -ms-flex: 0 1 23%;
+      flex: 0 1 23%;
+  width: 23%;
+  margin-bottom: 1.5rem;
+  border: 1px solid #c8c8c8; }
+  .product-box h2 {
+    font-size: 1rem;
+    font-family: Merriweather, serif;
+    font-weight: normal;
+    font-style: normal; }
+  .product-box p {
+    text-decoration: none; }
+
+.product-box .wp-post-image {
+  left: 50%; }
 
 .blog .entry-header h2 {
   background-color: #248A83;

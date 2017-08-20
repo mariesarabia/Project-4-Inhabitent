@@ -13,7 +13,6 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-			<!-- <h1 class="page-title"><?php single_term_title(); ?></h1> alternate way -->
 			<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
@@ -21,14 +20,15 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+			<div class="product-grid">	
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			<div class="product-box">
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
+</div>
 			<?php endwhile; ?>
-
+</div>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -40,5 +40,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

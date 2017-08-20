@@ -28,7 +28,11 @@
 	font-size: 2.4rem;
 	text-transform: uppercase;
 	font-family: $font__header;
+	font-weight: normal;
+	font-style: normal;
+	color: $color_header;
 	text-align: center;
+	letter-spacing: 2px;
 }
 
 .shop-container {
@@ -50,7 +54,7 @@
 
 }
 
-.home.product-type-box {
+.home .product-type-box {
 	flex:0 1 23.5%;
 	width: 23.5%;
 	border: 1px solid $color_rule;
@@ -70,6 +74,8 @@
 	background-color: $color__link;
 	color: $color__reverse;
 	font-family: $font__header;
+	font-weight: normal;
+    font-style: normal;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 0.75rem 1.5rem;
@@ -104,6 +110,8 @@
 						h3 {
 							font-size: 1.3rem;
 							font-family: $font__header;
+							font-weight: normal;
+							font-style: normal;
 							line-height: 1.5rem;
 							margin-top: 0;
 							letter-spacing: 2px;
@@ -151,6 +159,57 @@
             height: 70px;
         }
 }
+
+//PRODUCT-TYPE PAGE
+
+.tax-product-type .page-title {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	font-family: $font__header;
+	font-weight: bold;
+    font-style: normal;
+}
+
+.tax-product-type .taxonomy-description {
+	text-align: center;
+	border-bottom: 1px dashed $color_rule;
+	margin-bottom: 1.5rem;
+}
+
+.product-grid {
+	display: flex;
+    justify-content: space-between;
+    text-align: center;
+   	margin-bottom: 1.5rem;
+	width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product-box {
+	flex: 0 1 23%;
+	width: 23%;
+	margin-bottom: 1.5rem;
+	border: 1px solid $color_rule;
+		h2 {
+			font-size: 1rem;
+			font-family: $font__main;
+			font-weight: normal;
+			font-style: normal;
+		}
+		p {
+			text-decoration: none;
+		}
+}
+
+.product-box .wp-post-image {
+
+
+
+	left: 50%;
+}
+
+
 
 // JOURNAL
 
