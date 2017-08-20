@@ -103,18 +103,26 @@
 	padding-top: 0;
 }
 
-//2-column layout
+.site-content {
+	padding-top: 50px;
+}
+
+
+.page-template-default .content-area,
+.page-template-home .content-area,
+.single-post .content-area{
+	width: 73%;
+	border-right: 1px solid $color_rule;
+}
+
+// 2-column layout
 .page-template-default .site-content, 
-.blog .site-content, 
-.single .site-content {
+.page-template-home .site-content, 
+.single-post .site-content {
 	display: flex; 
 	margin-left: auto;
 	margin-right: auto;
 	width: 1120px;
-		.content-area {
-			width: 73%;
-			border-right: 1px solid $color_rule;
-		}
 		.widget-area {
 			width: 27%;
 			padding-left: 5%;
@@ -149,16 +157,10 @@
 	}
 }
 
-.wpcf7 .asterisk {
-	color: $color_asterisk;
-}
+.wpcf7-form p {
+	margin-bottom: 1.5rem;
+} 
 
-.wpcf7 label {
-	text-transform: uppercase;
-	font-family: $font__header;
-	font-size: 1.1rem;
-	margin-bottom: 3rem;
-}
 
 .wpcf7 {
 	input, 
@@ -167,6 +169,18 @@
 		background-color: $color_background_screen;
 		border-radius: 0;
 	}
+
+
+	label {
+		text-transform: uppercase;
+		font-family: $font__header;
+		font-size: 1.1rem;
+	}
+
+	.asterisk {
+		color: $color_asterisk;
+	}
+
 	.wpcf7-submit {
 		padding: 0.75rem 1.5rem;
 		background-color: $color__link;
@@ -223,14 +237,19 @@
 		}
 }
 
+//SINGLE PRODUCT PAGE 
 
 
 
-// .post-info {
-// 	font-size: 2rem;
-// 	text-decoration: none;
-// 	text-transform: uppercase;
-// }
+//BLOG 
+
+
+
+.post-info {
+	font-size: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
 
 // .product-image-wrapper {
 // 	width: 48%;
@@ -338,14 +357,6 @@
 }
 
 //Front Page Journal
-
-
-
-
-
-.home.blog .site-content {
-	// text-align: center;
-}
 
 .home .read-button {
 	border: 1px solid $color__border;

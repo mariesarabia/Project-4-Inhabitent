@@ -773,33 +773,37 @@ a {
 .about .site-content {
   padding-top: 0; }
 
+.site-content {
+  padding-top: 50px; }
+
+.page-template-default .content-area,
+.page-template-home .content-area,
+.single-post .content-area {
+  width: 73%;
+  border-right: 1px solid #c8c8c8; }
+
 .page-template-default .site-content,
-.blog .site-content,
-.single .site-content {
+.page-template-home .site-content,
+.single-post .site-content {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
-  .page-template-default .site-content .content-area,
-  .blog .site-content .content-area,
-  .single .site-content .content-area {
-    width: 73%;
-    border-right: 1px solid #e1e1e1; }
   .page-template-default .site-content .widget-area,
-  .blog .site-content .widget-area,
-  .single .site-content .widget-area {
+  .page-template-home .site-content .widget-area,
+  .single-post .site-content .widget-area {
     width: 27%;
     padding-left: 5%; }
     .page-template-default .site-content .widget-area h2,
-    .blog .site-content .widget-area h2,
-    .single .site-content .widget-area h2 {
+    .page-template-home .site-content .widget-area h2,
+    .single-post .site-content .widget-area h2 {
       font-family: Novecentosanswide, sans-serif;
       text-transform: uppercase;
       font-size: 1.5rem; }
     .page-template-default .site-content .widget-area a,
-    .blog .site-content .widget-area a,
-    .single .site-content .widget-area a {
+    .page-template-home .site-content .widget-area a,
+    .single-post .site-content .widget-area a {
       text-decoration: none; }
 
 .page-template-default h2 {
@@ -817,20 +821,22 @@ a {
   font-family: Novecentosanswide, sans-serif;
   font-size: 2.5rem; }
 
-.wpcf7 .asterisk {
-  color: #d99054; }
-
-.wpcf7 label {
-  text-transform: uppercase;
-  font-family: Novecentosanswide, sans-serif;
-  font-size: 1.1rem;
-  margin-bottom: 3rem; }
+.wpcf7-form p {
+  margin-bottom: 1.5rem; }
 
 .wpcf7 input,
 .wpcf7 textarea {
   padding: 0.3rem;
   background-color: #f4f4f4;
   border-radius: 0; }
+
+.wpcf7 label {
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 1.1rem; }
+
+.wpcf7 .asterisk {
+  color: #d99054; }
 
 .wpcf7 .wpcf7-submit {
   padding: 0.75rem 1.5rem;
@@ -848,7 +854,7 @@ a {
   background-color: #248A83; }
 
 .post-type-archive-product .page-header {
-  border-bottom: 1px dashed #e1e1e1;
+  border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem; }
 
 .product-type-list {
@@ -867,6 +873,11 @@ a {
   .product-type-list a {
     text-decoration: none;
     color: #248A83; }
+
+.post-info {
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .single-product .product-content-wrapper {
   width: 48%; }
@@ -975,19 +986,59 @@ object {
     margin-left: auto;
     margin-right: auto; }
 
+.shop-container h2,
 .journal-container h2 {
   font-size: 2.4rem;
   text-transform: uppercase;
-  font-family: Novecentosanswide, sans-serif; }
+  font-family: Novecentosanswide, sans-serif;
+  text-align: center; }
 
-.home.blog .journal-container {
+.shop-container {
   margin-right: auto;
   margin-left: auto;
   width: 1120px;
   margin-bottom: 4.5rem; }
-  .home.blog .journal-container h2 {
-    text-align: center; }
-  .home.blog .journal-container ul {
+
+.product-type-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+  width: 1120px;
+  padding: 0.75rem; }
+  .product-type-grid p {
+    margin-bottom: 1.5rem; }
+
+.product-type-box {
+  -ms-flex: 0 1 23.5%;
+      flex: 0 1 23.5%;
+  width: 23.5%;
+  border: 1px solid #c8c8c8;
+  border-top-width: 5px;
+  padding: 0.75rem; }
+  .product-type-box img {
+    width: 70px;
+    height: 70px; }
+  .product-type-box a:hover,
+  .product-type-box a:visited {
+    color: #fff; }
+
+.product-type-button {
+  background-color: #248A83;
+  color: #fff;
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem; }
+
+.journal-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1120px;
+  margin-bottom: 4.5rem; }
+  .journal-container ul {
     list-style: none;
     display: -ms-flexbox;
     display: flex;
@@ -999,29 +1050,29 @@ object {
     padding-left: 0;
     margin-left: 0;
     margin-bottom: 0; }
-    .home.blog .journal-container ul li {
+    .journal-container ul li {
       -ms-flex: 0 1 32%;
           flex: 0 1 32%;
       border: 1px solid black;
       text-transform: uppercase;
       font-family: Merriweather, serif;
       position: relative; }
-      .home.blog .journal-container ul li .post-info {
+      .journal-container ul li .post-info {
         font-size: 0.75rem;
         padding: 0.75rem; }
-      .home.blog .journal-container ul li h3 {
+      .journal-container ul li h3 {
         font-size: 1.3rem;
         font-family: Novecentosanswide, sans-serif;
         line-height: 1.5rem;
         margin-top: 0;
         letter-spacing: 2px;
         margin-bottom: 3.75rem; }
-        .home.blog .journal-container ul li h3 a {
+        .journal-container ul li h3 a {
           text-decoration: none;
           color: #248A83; }
-        .home.blog .journal-container ul li h3 a:hover {
+        .journal-container ul li h3 a:hover {
           color: #404040; }
-      .home.blog .journal-container ul li img {
+      .journal-container ul li img {
         height: 250px;
         max-width: 100%;
         position: relative; }
