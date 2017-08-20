@@ -37,14 +37,15 @@ get_header(); ?>
 
 						
 			<?php /* Start the Loop */ ?>
+			<div class="archive-product-grid">	
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			<div class="archive-product-box">
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content' , 'product-loop' );
 				?>
-
+</div>
 			<?php endwhile; ?>
-
+			</div>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>

@@ -23,23 +23,21 @@
 		}
 }
 
-.shop-container h2, 
-.journal-container h2 {
-	font-size: 2.4rem;
-	text-transform: uppercase;
-	font-family: $font__header;
-	font-weight: normal;
-	font-style: normal;
-	color: $color_header;
-	text-align: center;
-	letter-spacing: 2px;
-}
-
 .shop-container {
 	margin-right: auto;
 	margin-left: auto;
 	width: 1120px;
-	margin-bottom: 4.5rem;
+	margin-bottom: 3rem;
+		h2 {
+			font-size: 2.4rem;
+			text-transform: uppercase;
+			font-family: $font__header;
+			font-weight: normal;
+			font-style: normal;
+			color: $color_header;
+			text-align: center;
+			letter-spacing: 2px;
+		}
 }
 
 .home .product-type-grid {
@@ -47,7 +45,6 @@
 	justify-content: space-between;
 	text-align: center;
 	width: 1120px;
-	padding: 0.75rem;
 		p {
 			margin-bottom: 1.5rem;
 		}
@@ -56,7 +53,7 @@
 
 .home .product-type-box {
 	flex:0 1 23.5%;
-	width: 23.5%;
+	max-width: 23.5%;
 	border: 1px solid $color_rule;
 	border-top-width: 5px;
 	padding: 0.75rem;
@@ -88,29 +85,42 @@
 	margin-left: auto;
 	width: 1120px;
 	margin-bottom: 4.5rem;
-		ul {
-			list-style: none;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			width: 1120px;
-			padding-left: 0;
-			margin-left: 0;
-			margin-bottom: 0;
-				li {
-					flex: 0 1 32%;
-					border: 1px solid black;
-					text-transform: uppercase;
-					font-family: $font__main;
-					position: relative;
-						.post-info {
-							font-size: 0.75rem;
-							padding: 0.75rem;
-						}
+	h2 {
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		font-family: $font__header;
+		font-weight: normal;
+		font-style: normal;
+		color: $color_header;
+		text-align: center;
+		letter-spacing: 2px;
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 1120px;
+		padding-left: 0;
+		margin-left: 0;
+		margin-bottom: 0;
+		margin-top: 3rem;
+			li {
+				flex: 0 1 32%;
+				max-width: 32;
+				border: 1px solid black;
+				text-transform: uppercase;
+				font-family: $font__main;
+				position: relative;
+					.post-info {
+						font-size: 0.75rem;
+						padding: 0.75rem;
+					}
 						h3 {
 							font-size: 1.3rem;
 							font-family: $font__header;
-							font-weight: normal;
+							font-weight: bold;
 							font-style: normal;
 							line-height: 1.5rem;
 							margin-top: 0;
@@ -138,10 +148,132 @@
 	flex-direction: row wrap;
 }
 
+//Front Page Journal
+
+.home .read-button {
+	border: 1px solid $color__border;
+	position: absolute;
+	left: 0.75rem;
+	bottom: 0.75rem;
+	font-family: $font__header;
+	font-size: 0.9rem;
+	padding: 0.75rem 1.5rem;
+	text-decoration: none;
+		a {
+			color: $color__border;
+		}
+}
+
+.button:hover {
+	background-color: $color__link;
+}
+
 .shop-heading {
 	font-size: 2.4rem;
 	text-transform: uppercase;
 	font-family: $font__header;
+}
+
+//LATEST ADVENTURES 
+
+.adventures-container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 1120px;
+	margin-bottom: 4.5rem;
+	h2 {
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		font-family: $font__header;
+		font-weight: normal;
+		font-style: normal;
+		color: $color_header;
+		text-align: center;
+		letter-spacing: 2px;
+	}
+}
+
+.adventure-posts {
+	display: grid;
+	flex-flow: column;
+	width: 100%;
+	height: 540px;
+	background-color: blue;
+	list-style: none;
+	padding-left: 0;
+	
+}
+
+// .adventure-posts {
+// 	display: flex;
+// 	flex-flow: row wrap;
+// 	width: 100%;
+// 	height: 540px;
+// 	padding: 0.75rem;
+// 	background-color: blue;
+// 	list-style: none;
+// 	margin: 0;
+	
+// }
+
+.canoe {
+	background: url('../../images/adventure-photos/canoe-girl.jpg') no-repeat;
+	background-size: cover;
+	max-width: calc(100% / 2);
+	height: 100%;
+}
+.friends {
+	background: url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat;
+	background-size: cover;
+	max-width: calc(100% / 2);
+}
+.mountain {
+	background-image: url('../../images/adventure-photos/mountain-hikers.jpg');
+	max-width: calc(100% / 3);
+}
+.night-sky {
+	background-image: url('../../images/adventure-photos/night-sky.jpg');
+	max-width: calc(100% / 3);
+}
+
+//ABOUT PAGE 
+
+.page-template-about {
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 1120px;
+		font-size: 1rem;
+	}
+	
+	.entry-title {
+		font-family: $font__header;
+		text-transform: uppercase;
+		text-align: center;
+		color: $color__reverse;
+		font-size: 3rem;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.entry-content {
+		max-width: 800px;
+		margin: 3rem auto;
+		line-height: 1.75rem;
+		h2 {
+			font-family: $font__header;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 2rem;
+		}	
+	} 
+
+	.entry-header {
+		.container {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
 
 //SHOP STUFF//
@@ -151,7 +283,7 @@
     justify-content: space-between;
     text-align: center;
     width: 1120px;
-        .cproduct-type-box {
+        .product-type-box {
             flex-basis: 25%;
         }
         .img {
@@ -160,20 +292,22 @@
         }
 }
 
+
 //PRODUCT-TYPE PAGE
 
-.tax-product-type .page-title {
-	margin-top: 0;
-	margin-bottom: 1.5rem;
-	font-family: $font__header;
-	font-weight: bold;
-    font-style: normal;
-}
-
-.tax-product-type .taxonomy-description {
-	text-align: center;
-	border-bottom: 1px dashed $color_rule;
-	margin-bottom: 1.5rem;
+.tax-product-type {
+	.page-title {
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+		font-family: $font__header;
+		font-weight: bold;
+		font-style: normal;
+	}
+	.taxonomy-description {
+		text-align: center;
+		border-bottom: 1px dashed $color_rule;
+		margin-bottom: 1.5rem;
+	}
 }
 
 .product-grid {
@@ -203,10 +337,38 @@
 }
 
 .product-box .wp-post-image {
-
-
-
 	left: 50%;
+}
+
+//
+
+//ARCHIVE PRODUCTS PAGE 
+
+.archive-product-grid {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+   	margin-bottom: 1.5rem;
+	width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.archive-product-box {
+	flex: 0 1 23%;
+	width: 23%;
+	margin-bottom: 1.5rem;
+	border: 1px solid $color_rule;
+}
+
+.post-type-archive {
+	.entry-header {
+		height: 250px;
+		position: relative;
+		overflow: hidden;
+		background-color: $color_rule;
+	}
 }
 
 

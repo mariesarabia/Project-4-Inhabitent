@@ -28,6 +28,11 @@ get_header(); ?>
 				<p class="price"><?php echo CFS()->get( 'price' ); ?></p>
 				<div class="entry-content">
 				<p><?php the_content(); ?></p>
+				<div class="social-media-buttons">
+					<button><i class="fa fa-facebook"></i>Like</button>
+					<button><i class="fa fa-twitter"></i>Tweet</button>
+					<button><i class="fa fa-pinterest"></i>Pin</button>
+				</div>
 				</div>
 			</div> 
 		</div>

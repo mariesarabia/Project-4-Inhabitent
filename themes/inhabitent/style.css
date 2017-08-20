@@ -742,35 +742,6 @@ a {
 .bypostauthor {
   display: block; }
 
-.page-template-about .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-  font-size: 1rem; }
-
-.page-template-about .entry-title {
-  font-family: Novecentosanswide, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  font-size: 3rem;
-  margin-top: auto;
-  margin-bottom: auto; }
-
-.page-template-about .entry-content {
-  max-width: 800px;
-  margin: 3rem auto;
-  line-height: 1.75rem; }
-  .page-template-about .entry-content h2 {
-    font-family: Novecentosanswide, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem; }
-
-.page-template-about .entry-header .container {
-  margin-left: auto;
-  margin-right: auto; }
-
 .site-content {
   padding-top: 50px; }
 
@@ -781,13 +752,8 @@ a {
 .site-content {
   padding-top: 50px; }
 
-.page-template-default .content-area,
-.page-template-home .content-area,
-.single-post .content-area {
-  width: 73%;
-  border-right: 1px solid #c8c8c8; }
-
-.page-template-default .site-content,
+.page-template-default:not(.home) .site-content,
+.blog .site-content,
 .page-template-home .site-content,
 .single-post .site-content {
   display: -ms-flexbox;
@@ -795,33 +761,44 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
-  .page-template-default .site-content .widget-area,
-  .page-template-home .site-content .widget-area,
-  .single-post .site-content .widget-area {
-    width: 27%;
-    padding-left: 5%; }
-    .page-template-default .site-content .widget-area h2,
-    .page-template-home .site-content .widget-area h2,
-    .single-post .site-content .widget-area h2 {
-      font-family: Novecentosanswide, sans-serif;
-      text-transform: uppercase;
-      font-size: 1.5rem; }
-    .page-template-default .site-content .widget-area a,
-    .page-template-home .site-content .widget-area a,
-    .single-post .site-content .widget-area a {
-      text-decoration: none; }
 
-.page-template-default h2 {
+.page-template-default:not(.home) .widget-area,
+.blog .widget-area,
+.page-template-home .widget-area,
+.single-post .widget-area {
+  width: 27%;
+  padding-left: 5%; }
+  .page-template-default:not(.home) .widget-area h2,
+  .blog .widget-area h2,
+  .page-template-home .widget-area h2,
+  .single-post .widget-area h2 {
+    font-family: Novecentosanswide, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+  .page-template-default:not(.home) .widget-area a,
+  .blog .widget-area a,
+  .page-template-home .widget-area a,
+  .single-post .widget-area a {
+    text-decoration: none; }
+
+.page-template-default:not(.home) .content-area,
+.blog .content-area,
+.page-template-home .content-area,
+.single-post .content-area {
+  width: 73%;
+  border-right: 1px solid #c8c8c8; }
+
+.page-template-default:not(.home) h2 {
   font-family: Novecentosanswide, sans-serif;
   color: #2f1339;
   text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: 2px; }
 
-.page-template-default .content-area {
+.page-template-default:not(.home) .content-area {
   padding-right: 5%; }
 
-.page-template-default h1 {
+.page-template-default:not(.home) h1 {
   text-transform: uppercase;
   font-family: Novecentosanswide, sans-serif;
   font-size: 2.5rem; }
@@ -879,65 +856,40 @@ a {
     text-decoration: none;
     color: #248A83; }
 
-.post-info {
-  font-size: 2rem;
-  text-decoration: none;
-  text-transform: uppercase; }
-
 .archive .page-title {
   font-family: Novecentosanswide, sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5rem; }
 
-.home .read-button {
-  border: 1px solid #000;
-  position: absolute;
-  left: 0.75rem;
-  bottom: 0.75rem;
-  font-family: Novecentosanswide, sans-serif;
-  font-size: 0.9rem;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none; }
-  .home .read-button a {
-    color: #000; }
-
-.button:hover {
-  background-color: #248A83; }
-
-.single-product .site-content {
+.single-product .single-product .site-content {
+  width: 1120px;
   margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
-
-.single-product .content-area {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
+  margin-right: auto; }
 
 .single-product .hentry {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: space-between;
-      flex-direction: space-between;
-  margin: 0 0 4.5rem; }
-  .single-product .hentry .entry-title {
-    color: #d99054;
-    font-family: Novecentosanswide, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 2.4rem; }
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 0; }
 
-.product-image-container {
+.single-product .product-content-container, .single-product .product-image-container {
   width: 48%; }
 
-.product-content-container {
-  width: 48%; }
-  .product-content-container .price {
-    font-size: 1.8rem;
-    font-family: Novecentosanswide, sans-serif;
-    font-weight: normal;
-    font-style: normal; }
+.single-product .entry-title {
+  margin-top: 0;
+  color: #d99054;
+  font-family: Novecentosanswide, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.single-product .hentry .price {
+  font-size: 1.8rem;
+  margin-top: 0; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1022,22 +974,20 @@ object {
     margin-left: auto;
     margin-right: auto; }
 
-.shop-container h2,
-.journal-container h2 {
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  font-family: Novecentosanswide, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  color: #2f1339;
-  text-align: center;
-  letter-spacing: 2px; }
-
 .shop-container {
   margin-right: auto;
   margin-left: auto;
   width: 1120px;
-  margin-bottom: 4.5rem; }
+  margin-bottom: 3rem; }
+  .shop-container h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: Novecentosanswide, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #2f1339;
+    text-align: center;
+    letter-spacing: 2px; }
 
 .home .product-type-grid {
   display: -ms-flexbox;
@@ -1045,15 +995,14 @@ object {
   -ms-flex-pack: justify;
       justify-content: space-between;
   text-align: center;
-  width: 1120px;
-  padding: 0.75rem; }
+  width: 1120px; }
   .home .product-type-grid p {
     margin-bottom: 1.5rem; }
 
 .home .product-type-box {
   -ms-flex: 0 1 23.5%;
       flex: 0 1 23.5%;
-  width: 23.5%;
+  max-width: 23.5%;
   border: 1px solid #c8c8c8;
   border-top-width: 5px;
   padding: 0.75rem; }
@@ -1080,6 +1029,15 @@ object {
   margin-left: auto;
   width: 1120px;
   margin-bottom: 4.5rem; }
+  .home .journal-container h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: Novecentosanswide, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #2f1339;
+    text-align: center;
+    letter-spacing: 2px; }
   .home .journal-container ul {
     list-style: none;
     display: -ms-flexbox;
@@ -1091,10 +1049,12 @@ object {
     width: 1120px;
     padding-left: 0;
     margin-left: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 3rem; }
     .home .journal-container ul li {
       -ms-flex: 0 1 32%;
           flex: 0 1 32%;
+      max-width: 32;
       border: 1px solid black;
       text-transform: uppercase;
       font-family: Merriweather, serif;
@@ -1105,7 +1065,7 @@ object {
       .home .journal-container ul li h3 {
         font-size: 1.3rem;
         font-family: Novecentosanswide, sans-serif;
-        font-weight: normal;
+        font-weight: bold;
         font-style: normal;
         line-height: 1.5rem;
         margin-top: 0;
@@ -1127,10 +1087,99 @@ object {
   -ms-flex-direction: row wrap;
       flex-direction: row wrap; }
 
+.home .read-button {
+  border: 1px solid #000;
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none; }
+  .home .read-button a {
+    color: #000; }
+
+.button:hover {
+  background-color: #248A83; }
+
 .shop-heading {
   font-size: 2.4rem;
   text-transform: uppercase;
   font-family: Novecentosanswide, sans-serif; }
+
+.adventures-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1120px;
+  margin-bottom: 4.5rem; }
+  .adventures-container h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: Novecentosanswide, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #2f1339;
+    text-align: center;
+    letter-spacing: 2px; }
+
+.adventure-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  width: 100%;
+  height: 540px;
+  background-color: blue;
+  list-style: none;
+  padding-left: 0; }
+
+.canoe {
+  background: url("../../images/adventure-photos/canoe-girl.jpg") no-repeat;
+  background-size: cover;
+  max-width: calc(100% / 2);
+  height: 100%; }
+
+.friends {
+  background: url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat;
+  background-size: cover;
+  max-width: calc(100% / 2); }
+
+.mountain {
+  background-image: url("../../images/adventure-photos/mountain-hikers.jpg");
+  max-width: calc(100% / 3); }
+
+.night-sky {
+  background-image: url("../../images/adventure-photos/night-sky.jpg");
+  max-width: calc(100% / 3); }
+
+.page-template-about .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  font-size: 1rem; }
+
+.page-template-about .entry-title {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.page-template-about .entry-content {
+  max-width: 800px;
+  margin: 3rem auto;
+  line-height: 1.75rem; }
+  .page-template-about .entry-content h2 {
+    font-family: Novecentosanswide, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem; }
+
+.page-template-about .entry-header .container {
+  margin-left: auto;
+  margin-right: auto; }
 
 .product-type-grid {
   display: -ms-flexbox;
@@ -1139,7 +1188,7 @@ object {
       justify-content: space-between;
   text-align: center;
   width: 1120px; }
-  .product-type-grid .cproduct-type-box {
+  .product-type-grid .product-type-box {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
   .product-type-grid .img {
@@ -1185,6 +1234,32 @@ object {
 
 .product-box .wp-post-image {
   left: 50%; }
+
+.archive-product-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.archive-product-box {
+  -ms-flex: 0 1 23%;
+      flex: 0 1 23%;
+  width: 23%;
+  margin-bottom: 1.5rem;
+  border: 1px solid #c8c8c8; }
+
+.post-type-archive .entry-header {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  background-color: #c8c8c8; }
 
 .blog .entry-header h2 {
   background-color: #248A83;

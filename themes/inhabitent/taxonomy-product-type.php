@@ -24,7 +24,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="product-box">
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content', 'product-loop' );
 				?>
 </div>
 			<?php endwhile; ?>

@@ -1,7 +1,5 @@
 <?php
 /** 
-* Template Name: Front-Page
-*
 * @package Inhabitent_Theme
 */
 
@@ -27,7 +25,7 @@ get_header(); ?>
 			<div class="product-type-box">
 				<img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';  ?>">
 				<p><?php echo $term->description; ?></p>
-				<a class="product-type-button" href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?> stuff</a>
+				<p><a class="product-type-button" href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?> stuff</a></p>
 			</div>
 	<?php endforeach; ?>
 	</div>
@@ -35,8 +33,7 @@ get_header(); ?>
 </section>
 		
 		
-			<section class="latest-posts">
-			<div class="journal-container">
+			<section class="journal-container">
 				<h2>Inhabitent Journal</h2>
 					
 		<?php
@@ -68,7 +65,7 @@ get_header(); ?>
 						
 		</div> <!-- journal-container -->
 		</section>
-		<section class="latest-adventures"></div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
