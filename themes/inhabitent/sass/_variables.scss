@@ -4,13 +4,14 @@ $base__space-unit: 1.5rem;
 
 // Colors
 
-$color_rule: #e1e1e1;
-$color_header: #2f1339;
-$color_accent: #d99054;
-$color_background_screen: #f4f4f4;
-$color_rule: #c8c8c8;
-
-
+$color__rule: #e1e1e1;
+$color__header: #2f1339;
+$color__accent: #d99054;
+$color__background_screen: #f4f4f4;
+$color__rule: #c8c8c8;
+$color__link: #248A83;
+$color__reverse: #fff;
+$color_footer_header: #d99054;
 
 
 $color__background-body: #fff;
@@ -26,14 +27,15 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__reverse: #fff;
-$color__link: #248A83;
-$color_footer_header: #d99054;
+
+
+
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
 // Typography
 
+$font__main-size: 16px;
 $font__main: Merriweather, serif;
 $font__header: Novecentosanswide, sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;

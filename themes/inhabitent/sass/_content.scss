@@ -56,17 +56,9 @@
 
 //all pages 
 
-.site-content {
-	padding-top: 50px;
-}
-
 .home .site-content,
 .about .site-content {
 	padding-top: 0;
-}
-
-.site-content {
-	padding-top: 50px;
 }
 
 
@@ -75,7 +67,9 @@
 .page-template-default:not(.home),
 .blog,
 .page-template-home,
-.single-post {
+.single-post,
+.error404
+ {
 	.site-content {
 		display: flex;
 		margin-left: auto;
@@ -85,10 +79,11 @@
 	.widget-area {
 		width: 27%;
 		padding-left: 5%;
-		h2 {
+		h2.widget-title {
 			font-family: $font__header;
 			text-transform: uppercase;
 			font-size: 1.5rem;
+			letter-spacing: 2px;
 		}
 		a {
 			text-decoration: none;
@@ -99,9 +94,10 @@
 .page-template-default:not(.home) .content-area,
 .blog .content-area,
 .page-template-home .content-area,
-.single-post .content-area{
+.single-post .content-area,
+.error404 .content-area {
 	width: 73%;
-	border-right: 1px solid $color_rule;
+	border-right: 1px solid $color__rule;
 }
 
 //FIND US PAGE
@@ -109,7 +105,7 @@
 .page-template-default:not(.home) {
 	h2 {
 		font-family: $font__header;
-		color: $color_header;
+		color: $color__header;
 		text-transform: uppercase;
 		font-size: 2rem;
 		letter-spacing: 2px;
@@ -133,7 +129,7 @@
 	input, 
 	textarea {
 		padding: 0.3rem;
-		background-color: $color_background_screen;
+		background-color: $color__background_screen;
 		border-radius: 0;
 	}
 
@@ -145,7 +141,7 @@
 	}
 
 	.asterisk {
-		color: $color_accent;
+		color: $color__accent;
 	}
 
 	.wpcf7-submit {
@@ -172,7 +168,7 @@
 //SHOP STUFF PAGE
 
 .post-type-archive-product .page-header {
-	border-bottom: 1px dashed $color_rule;
+	border-bottom: 1px dashed $color__rule;
 	margin-bottom: 3rem;
 }
 
@@ -234,7 +230,7 @@
 
 .single-product .entry-title {
 	margin-top: 0;
-	color: $color_accent;
+	color: $color__accent;
 	font-family: $font__header;
 	font-weight: bold;
 	font-style: normal;
@@ -246,5 +242,53 @@
 .single-product .hentry .price {
 	font-size: 1.8rem;
 	margin-top: 0;
+}
+
+//ERROR 404 PAGE 
+
+.error404 {
+	
+	.page-title {
+		text-transform: uppercase;
+		font-family: $font__header;
+		font-size: 2.4rem;
+		letter-spacing: 2px;
+	}
+
+	.search-toggle {
+		display: none;
+	}
+
+	.widget {
+		margin: 0 0 3rem;
+	}
+	.widget_recent_entries {
+		.widgettitle, {
+			font-family: $font__header;
+			text-transform: uppercase;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+	.widget_categories {
+		.widget-title {
+			font-family: $font__header;
+			text-transform: uppercase;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+	
+	.widget_archive {
+		.widgettitle {
+			font-family: $font__header;
+			text-transform: uppercase;
+		}
+	}
+	.content-area {
+		padding-bottom: 3rem;
+	}
 }
 

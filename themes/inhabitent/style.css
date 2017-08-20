@@ -274,7 +274,8 @@ textarea {
   font-family: Merriweather, serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.75; }
+  line-height: 1.75;
+  font-size: 16px; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -742,20 +743,15 @@ a {
 .bypostauthor {
   display: block; }
 
-.site-content {
-  padding-top: 50px; }
-
 .home .site-content,
 .about .site-content {
   padding-top: 0; }
 
-.site-content {
-  padding-top: 50px; }
-
 .page-template-default:not(.home) .site-content,
 .blog .site-content,
 .page-template-home .site-content,
-.single-post .site-content {
+.single-post .site-content,
+.error404 .site-content {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
@@ -765,26 +761,31 @@ a {
 .page-template-default:not(.home) .widget-area,
 .blog .widget-area,
 .page-template-home .widget-area,
-.single-post .widget-area {
+.single-post .widget-area,
+.error404 .widget-area {
   width: 27%;
   padding-left: 5%; }
-  .page-template-default:not(.home) .widget-area h2,
-  .blog .widget-area h2,
-  .page-template-home .widget-area h2,
-  .single-post .widget-area h2 {
+  .page-template-default:not(.home) .widget-area h2.widget-title,
+  .blog .widget-area h2.widget-title,
+  .page-template-home .widget-area h2.widget-title,
+  .single-post .widget-area h2.widget-title,
+  .error404 .widget-area h2.widget-title {
     font-family: Novecentosanswide, sans-serif;
     text-transform: uppercase;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    letter-spacing: 2px; }
   .page-template-default:not(.home) .widget-area a,
   .blog .widget-area a,
   .page-template-home .widget-area a,
-  .single-post .widget-area a {
+  .single-post .widget-area a,
+  .error404 .widget-area a {
     text-decoration: none; }
 
 .page-template-default:not(.home) .content-area,
 .blog .content-area,
 .page-template-home .content-area,
-.single-post .content-area {
+.single-post .content-area,
+.error404 .content-area {
   width: 73%;
   border-right: 1px solid #c8c8c8; }
 
@@ -809,7 +810,7 @@ a {
 .wpcf7 input,
 .wpcf7 textarea {
   padding: 0.3rem;
-  background-color: #f4f4f4;
+  background-color: #f1f1f1;
   border-radius: 0; }
 
 .wpcf7 label {
@@ -890,6 +891,39 @@ a {
 .single-product .hentry .price {
   font-size: 1.8rem;
   margin-top: 0; }
+
+.error404 .page-title {
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 2px; }
+
+.error404 .search-toggle {
+  display: none; }
+
+.error404 .widget {
+  margin: 0 0 3rem; }
+
+.error404 .widget_recent_entries .widgettitle {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase; }
+
+.error404 .widget_recent_entries a {
+  text-decoration: none; }
+
+.error404 .widget_categories .widget-title {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase; }
+
+.error404 .widget_categories a {
+  text-decoration: none; }
+
+.error404 .widget_archive .widgettitle {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase; }
+
+.error404 .content-area {
+  padding-bottom: 3rem; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1170,7 +1204,7 @@ object {
 .page-template-about .entry-content {
   max-width: 800px;
   margin: 3rem auto;
-  line-height: 1.75rem; }
+  line-height: 1.75; }
   .page-template-about .entry-content h2 {
     font-family: Novecentosanswide, sans-serif;
     text-transform: uppercase;
@@ -1268,16 +1302,27 @@ object {
     left: 0;
     width: auto; }
 
-.post-type-archive .entry-content .entry-title {
-  font-size: 1rem;
-  font-family: Merriweather, serif;
-  font-weight: 300;
-  font-style: normal;
-  margin-left: 0;
-  display: inline;
-  text-align: left; }
+.post-type-archive .entry-content,
+.tax-product-type .entry-content {
+  padding: 0; }
+  .post-type-archive .entry-content .entry-title,
+  .tax-product-type .entry-content .entry-title {
+    font-size: 1rem;
+    font-family: Merriweather, serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 0;
+    display: inline;
+    text-align: left;
+    line-height: 1.75;
+    background: #fff; }
+  .post-type-archive .entry-content .price,
+  .tax-product-type .entry-content .price {
+    float: right;
+    background: #fff; }
 
-.post-type-archive ul.leaders {
+.post-type-archive ul.leaders,
+.tax-product-type ul.leaders {
   max-width: 100%;
   padding: 0;
   overflow-x: hidden;
@@ -1285,17 +1330,20 @@ object {
   padding: 0.75rem 1.5rem 0 1.5rem;
   margin-left: 0; }
 
-.post-type-archive ul.leaders li:after {
+.post-type-archive ul.leaders li:after,
+.tax-product-type ul.leaders li:after {
   float: left;
   width: 0;
   white-space: nowrap;
   content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "; }
 
-.post-type-archive ul.leaders span:first-child {
+.post-type-archive ul.leaders span:first-child,
+.tax-product-type ul.leaders span:first-child {
   margin: 0;
   background: white; }
 
-.post-type-archive ul.leaders span + span {
+.post-type-archive ul.leaders span + span,
+.tax-product-type ul.leaders span + span {
   float: right;
   background: white;
   position: relative;

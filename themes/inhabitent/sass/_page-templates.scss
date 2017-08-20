@@ -34,7 +34,7 @@
 			font-family: $font__header;
 			font-weight: normal;
 			font-style: normal;
-			color: $color_header;
+			color: $color__header;
 			text-align: center;
 			letter-spacing: 2px;
 		}
@@ -54,7 +54,7 @@
 .home .product-type-box {
 	flex:0 1 23.5%;
 	max-width: 23.5%;
-	border: 1px solid $color_rule;
+	border: 1px solid $color__rule;
 	border-top-width: 5px;
 	padding: 0.75rem;
 	img {
@@ -91,7 +91,7 @@
 		font-family: $font__header;
 		font-weight: normal;
 		font-style: normal;
-		color: $color_header;
+		color: $color__header;
 		text-align: center;
 		letter-spacing: 2px;
 	}
@@ -187,7 +187,7 @@
 		font-family: $font__header;
 		font-weight: normal;
 		font-style: normal;
-		color: $color_header;
+		color: $color__header;
 		text-align: center;
 		letter-spacing: 2px;
 	}
@@ -259,7 +259,7 @@
 	.entry-content {
 		max-width: 800px;
 		margin: 3rem auto;
-		line-height: 1.75rem;
+		line-height: $font__line-height-body;
 		h2 {
 			font-family: $font__header;
 			text-transform: uppercase;
@@ -293,6 +293,8 @@
 }
 
 
+
+
 //PRODUCT-TYPE PAGE
 
 .tax-product-type {
@@ -305,7 +307,7 @@
 	}
 	.taxonomy-description {
 		text-align: center;
-		border-bottom: 1px dashed $color_rule;
+		border-bottom: 1px dashed $color__rule;
 		margin-bottom: 1.5rem;
 	}
 }
@@ -324,7 +326,7 @@
 	flex: 0 1 23%;
 	width: 23%;
 	margin-bottom: 1.5rem;
-	border: 1px solid $color_rule;
+	border: 1px solid $color__rule;
 		h2 {
 			font-size: 1rem;
 			font-family: $font__main;
@@ -360,67 +362,76 @@
 		flex: 0 1 23%;
 		width: 23%;
 		margin-bottom: 1.5rem;
-		border: 1px solid $color_rule;
-	}
+		border: 1px solid $color__rule;
+	}	
 
-		.entry-header {
-			height: 250px;
-			background-color: $color_rule;
-			position: relative;
-			overflow: hidden;
-			img.wp-post-image {
-				max-height: 250px;
-				position: absolute;
-				max-width: none;
-				top: 0;
-				left: 0;
-				width: auto;
-				
-
-				
-						}
-		}
-
-		.entry-content {
-			.entry-title {
-				font-size: 1rem;
-				font-family: $font__main;
-				font-weight: 300;
-				font-style: normal;
-				margin-left: 0;
-				display: inline;
-				text-align: left;	
+	.entry-header {
+		height: 250px;
+		background-color: $color__rule;
+		position: relative;
+		overflow: hidden;
+		img.wp-post-image {
+			max-height: 250px;
+			position: absolute;
+			max-width: none;
+			top: 0;
+			left: 0;
+			width: auto;
 			}
-		}
-	
-		//DOT LEADERS 
-		ul.leaders {
-			max-width: 100%;
-			padding: 0;
-			overflow-x: hidden;
-			list-style: none;
-			padding: 0.75rem 1.5rem 0 1.5rem;
+	}
+}
+
+
+
+.post-type-archive,
+.tax-product-type {
+	.entry-content {
+		padding: 0;
+		.entry-title {
+			font-size: 1rem;
+			font-family: $font__main;
+			font-weight: 300;
+			font-style: normal;
 			margin-left: 0;
+			display: inline;
+			text-align: left;
+			line-height: $font__line-height-body;
+			background: $color__reverse; 	
 		}
-		ul.leaders li:after {
-			float: left;
-			width: 0;
-			white-space: nowrap;
-			content:
-		 ". . . . . . . . . . . . . . . . . . . . "
-		 ". . . . . . . . . . . . . . . . . . . . "
-		 ". . . . . . . . . . . . . . . . . . . . "
-		 ". . . . . . . . . . . . . . . . . . . . "}
-		ul.leaders span:first-child {
-			margin: 0;
-			background: white}
-		ul.leaders span + span {
+		.price {
 			float: right;
-			// padding-left: 0.33em;
-			background: white;
-			position: relative;
-			z-index: 1
+			background: $color__reverse; 
 		}
+	}
+	
+	//DOT LEADERS 
+	ul.leaders {
+		max-width: 100%;
+		padding: 0;
+		overflow-x: hidden;
+		list-style: none;
+		padding: 0.75rem 1.5rem 0 1.5rem;
+		margin-left: 0;
+	}
+	ul.leaders li:after {
+		float: left;
+		width: 0;
+		white-space: nowrap;
+		content:
+	 ". . . . . . . . . . . . . . . . . . . . "
+	 ". . . . . . . . . . . . . . . . . . . . "
+	 ". . . . . . . . . . . . . . . . . . . . "
+	 ". . . . . . . . . . . . . . . . . . . . "}
+	ul.leaders span:first-child {
+		margin: 0;
+		background: white}
+	ul.leaders span + span {
+		float: right;
+		// padding-left: 0.33em;
+		background: white;
+		position: relative;
+		z-index: 1
+	}
 }
 
 
