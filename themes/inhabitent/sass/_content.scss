@@ -178,7 +178,7 @@
 	}
 
 	.asterisk {
-		color: $color_asterisk;
+		color: $color_accent;
 	}
 
 	.wpcf7-submit {
@@ -325,27 +325,6 @@
 // 	font-family: $font__header;
 // }
 
-// .single-product .site-content {
-// 	margin-left: auto;
-// 	margin-right: auto;
-// 	width: 1120px;
-// }
-
-
-// .single-product .content-area {
-// 	display: flex;
-// 	flex-direction: column;
-// 	padding-top: 3rem;
-// 	padding-bottom: 3rem;
-// 		img {
-// 			height: auto;
-// 			max-width: 100%;
-// 		}
-// }
-
-.single-product .product-content-wrapper {
-	width: 48%;
-}
 
 //SHOP STUFF PAGE 
 
@@ -381,3 +360,44 @@
 // 	margin-left: auto;
 // 	margin-right: auto;
 // }
+
+//SINGLE PRODUCT PAGE 
+
+.single-product .site-content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1120px;
+}
+
+.single-product .content-area {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.single-product .hentry {
+	display: flex;
+	flex-direction: space-between;
+	margin: 0 0 4.5rem;
+		.entry-title {
+			color: $color_accent;
+			font-family: $font__header;
+			font-weight: bold;
+			font-style: normal;
+			text-transform: uppercase;
+			font-size: 2.4rem;
+		}
+}
+
+.product-image-container {
+	width: 48%;
+}
+
+.product-content-container {
+	width: 48%;
+		.price {
+			font-size: 1.8rem;
+			font-family: $font__header;
+			font-weight: normal;
+			font-style: normal;
+		}
+}

@@ -14,13 +14,13 @@ get_header(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
-			<div class="product-image-wrapper">
+			<div class="product-image-container">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 				<?php endif; ?>
 			</div>
 
-		<div class="product-content-wrapper">	
+		<div class="product-content-container">	
 			<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header>

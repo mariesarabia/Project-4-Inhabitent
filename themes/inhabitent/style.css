@@ -612,6 +612,10 @@ a {
   font-weight: bold;
   font-style: normal; }
 
+.footer-info-container .contact i {
+  margin-right: 0.5rem;
+  font-size: 1.25rem; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -880,9 +884,6 @@ a {
   text-decoration: none;
   text-transform: uppercase; }
 
-.single-product .product-content-wrapper {
-  width: 48%; }
-
 .archive .page-title {
   font-family: Novecentosanswide, sans-serif;
   text-transform: uppercase;
@@ -903,6 +904,40 @@ a {
 
 .button:hover {
   background-color: #248A83; }
+
+.single-product .site-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.single-product .content-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.single-product .hentry {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: space-between;
+      flex-direction: space-between;
+  margin: 0 0 4.5rem; }
+  .single-product .hentry .entry-title {
+    color: #d99054;
+    font-family: Novecentosanswide, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 2.4rem; }
+
+.product-image-container {
+  width: 48%; }
+
+.product-content-container {
+  width: 48%; }
+  .product-content-container .price {
+    font-size: 1.8rem;
+    font-family: Novecentosanswide, sans-serif;
+    font-weight: normal;
+    font-style: normal; }
 
 /*--------------------------------------------------------------
 # Media
