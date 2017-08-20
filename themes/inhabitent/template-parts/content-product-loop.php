@@ -8,25 +8,20 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<header class="entry-header">
+<div class="entry-header">
 	<?php if ( has_post_thumbnail() ) : ?>
 		<a href="<?php the_permalink(); ?>">
-		<img src="<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'large' ); ?>
 		</a>
 	<?php endif; ?>
-
-	
-
-	<?php if ( 'post' === get_post_type() ) : ?>
-	<div class="entry-meta">
-		<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-	</div><!-- .entry-meta -->
-	<?php endif; ?>
-</header><!-- .entry-header -->
+</div><!-- entry-header -->
 
 <div class="entry-content">
-<?php the_title( '<h2 class="entry-title">' , '</h2>' ); ?>
-	<?php echo CFS()->get( 'price' ); ?>
-	<?php //the_excerpt(); ?>
-</div><!-- .entry-content -->
+	<ul class="leaders">
+		<li>
+			<?php the_title( '<span><h2 class="entry-title">' , '</h2></span>' ); ?>
+			<span><?php echo CFS()->get( 'price' ); ?></span>
+		</li>
+	</ul><!-- leaders -->
+</div><!-- entry-content -->
 </article><!-- #post-## -->

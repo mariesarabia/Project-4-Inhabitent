@@ -1235,7 +1235,7 @@ object {
 .product-box .wp-post-image {
   left: 50%; }
 
-.archive-product-grid {
+.post-type-archive .archive-product-grid {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -1248,7 +1248,7 @@ object {
   margin-left: auto;
   margin-right: auto; }
 
-.archive-product-box {
+.post-type-archive .archive-product-box {
   -ms-flex: 0 1 23%;
       flex: 0 1 23%;
   width: 23%;
@@ -1257,9 +1257,49 @@ object {
 
 .post-type-archive .entry-header {
   height: 250px;
+  background-color: #c8c8c8;
   position: relative;
-  overflow: hidden;
-  background-color: #c8c8c8; }
+  overflow: hidden; }
+  .post-type-archive .entry-header img.wp-post-image {
+    max-height: 250px;
+    position: absolute;
+    max-width: none;
+    top: 0;
+    left: 0;
+    width: auto; }
+
+.post-type-archive .entry-content .entry-title {
+  font-size: 1rem;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-left: 0;
+  display: inline;
+  text-align: left; }
+
+.post-type-archive ul.leaders {
+  max-width: 100%;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+  padding: 0.75rem 1.5rem 0 1.5rem;
+  margin-left: 0; }
+
+.post-type-archive ul.leaders li:after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "; }
+
+.post-type-archive ul.leaders span:first-child {
+  margin: 0;
+  background: white; }
+
+.post-type-archive ul.leaders span + span {
+  float: right;
+  background: white;
+  position: relative;
+  z-index: 1; }
 
 .blog .entry-header h2 {
   background-color: #248A83;

@@ -344,32 +344,92 @@
 
 //ARCHIVE PRODUCTS PAGE 
 
-.archive-product-grid {
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
-   	margin-bottom: 1.5rem;
-	width: 1120px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.archive-product-box {
-	flex: 0 1 23%;
-	width: 23%;
-	margin-bottom: 1.5rem;
-	border: 1px solid $color_rule;
-}
-
 .post-type-archive {
-	.entry-header {
-		height: 250px;
-		position: relative;
-		overflow: hidden;
-		background-color: $color_rule;
+	.archive-product-grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		text-align: center;
+		   margin-bottom: 1.5rem;
+		width: 1120px;
+		margin-left: auto;
+		margin-right: auto;
 	}
+
+	.archive-product-box {
+		flex: 0 1 23%;
+		width: 23%;
+		margin-bottom: 1.5rem;
+		border: 1px solid $color_rule;
+	}
+
+		.entry-header {
+			height: 250px;
+			background-color: $color_rule;
+			position: relative;
+			overflow: hidden;
+			img.wp-post-image {
+				max-height: 250px;
+				position: absolute;
+				max-width: none;
+				top: 0;
+				left: 0;
+				width: auto;
+				
+
+				
+						}
+		}
+
+		.entry-content {
+			.entry-title {
+				font-size: 1rem;
+				font-family: $font__main;
+				font-weight: 300;
+				font-style: normal;
+				margin-left: 0;
+				display: inline;
+				text-align: left;	
+			}
+		}
+	
+		//DOT LEADERS 
+		ul.leaders {
+			max-width: 100%;
+			padding: 0;
+			overflow-x: hidden;
+			list-style: none;
+			padding: 0.75rem 1.5rem 0 1.5rem;
+			margin-left: 0;
+		}
+		ul.leaders li:after {
+			float: left;
+			width: 0;
+			white-space: nowrap;
+			content:
+		 ". . . . . . . . . . . . . . . . . . . . "
+		 ". . . . . . . . . . . . . . . . . . . . "
+		 ". . . . . . . . . . . . . . . . . . . . "
+		 ". . . . . . . . . . . . . . . . . . . . "}
+		ul.leaders span:first-child {
+			margin: 0;
+			background: white}
+		ul.leaders span + span {
+			float: right;
+			// padding-left: 0.33em;
+			background: white;
+			position: relative;
+			z-index: 1
+		}
 }
+
+
+
+
+
+
+
+
 
 
 
