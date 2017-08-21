@@ -2,7 +2,7 @@
 /**
  * The template for displaying category pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
