@@ -22,20 +22,25 @@
 			<header id="masthead" class="site-header" role="banner">
 			<div class="container">	
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text">
+					<div class="tent-logo">
+					<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="green-tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg"></a>
+						<h1 class="site-title screen-reader-text">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></h1></a>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-					<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="white-logo-tent" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg"></a>
-				</div><!-- .site-branding -->
+				</div>
+				</div>
+			</div>
 			
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					<div class="main-navigation-container">
+						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					</div>
+					<div class="search-container">
 						<span class="search-toggle"><i class="fa fa-search"></i></span>
-						<?php get_search_form(); ?>
-				</nav><!-- #site-navigation -->
-			</div><!-- .container -->
+						<!-- <?php get_search_form(); ?> -->
+					</div>
+				</nav>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

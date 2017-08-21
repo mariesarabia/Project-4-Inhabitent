@@ -27,20 +27,16 @@ a {
 /* Menus */
 
 .main-navigation {
-	font-family: $font__header;
 	clear: both;
 	display: block;
-	display: flex;
-	justify-content: flex-end;
+	float: left;
 	width: 100%;
-	text-transform: uppercase;
-	height: 50px;
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
-		// padding-left: 0;
+		padding-left: 0;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -64,7 +60,6 @@ a {
 
 			a {
 				width: 200px;
-				padding-left: 50px;
 			}
 
 			:hover > a,
@@ -81,7 +76,6 @@ a {
 			left: auto;
 		}
 	}
-
 	li {
 		float: left;
 		position: relative;
@@ -136,12 +130,3 @@ a {
 		width: 50%;
 	}
 }
-
-.main-navigation {
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.search-field { display:none; }
-.search-submit { @extend .screen-reader-text; }
