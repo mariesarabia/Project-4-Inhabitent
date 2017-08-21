@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -23,24 +23,25 @@
 			<div class="container">	
 				<div class="site-branding">
 					<div class="tent-logo">
-					<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="green-tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg"></a>
+						<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="green-tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg"></a>
 						<h1 class="site-title screen-reader-text">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></h1></a>
+					</div>
 				</div>
-				</div>
-			</div>
+			
 			
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="main-navigation-container">
 						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</div>
+					
 					<div class="search-container">
 						<span class="search-toggle"><i class="fa fa-search"></i></span>
 						<!-- <?php get_search_form(); ?> -->
 					</div>
+					</div>
 				</nav>
 			</header><!-- #masthead -->
-
+			</div>
 			<div id="content" class="site-content">

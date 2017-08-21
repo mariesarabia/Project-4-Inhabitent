@@ -56,15 +56,16 @@
 
 //all pages 
 
+
+
 .home .site-content,
-.about .site-content {
+.page-template-about .site-content {
 	padding-top: 0;
 }
 
-.site-content:not(home),
-.site-content:not(home)
- {
-
+.page-template-default .site-content,
+.tax-product-type .site-content {
+	padding-top: 50px;
 }
 
 
@@ -215,7 +216,6 @@
 
 //SINGLE PRODUCT PAGE 
 
-.single-product 
 	
 .single-product .site-content {
 	width: 1120px;
@@ -254,7 +254,6 @@
 //ERROR 404 PAGE 
 
 .error404 {
-	
 	.page-title {
 		text-transform: uppercase;
 		font-family: $font__header;
@@ -301,67 +300,74 @@
 
 //NAVIGATION BAR 
 
+
 .site-header {
+	position: fixed;
+	z-index: 99999;
 	margin-left: auto;
 	margin-right: auto;
-	border-bottom: 1px solid $color__rule;
-	position: fixed;
 	width: 100%;
-	z-index: 999;
+	border-bottom: 1px solid $color__rule;
+	background-color: hsla(0, 0%, 100%, 0.85);
+	padding: 0.5rem 0;
 
-	.fieldset {
-		border: none
+	.container {
+		width: 1120px;
+		display: flex;
+		justify-content: space-between;
 	}
 }
 
-.container {
-	width: 1120px;
-	display: flex;
-	justify-content: space-between;
-}
-
 .main-navigation {
-	display: flex;
 	font-family: $font__header;
 	text-transform: uppercase;
 	align-content: flex-end;
-	
-
-		.main-navigation-container {
-			align-content: flex-end;
-		}
-		
-		ul.menu {
-			list-style: none;
-
-				li {
-					padding-left: 1.5rem;
-				}
-
+	width: 50%;
+		li {
+			font-style: bold;
+			font-weight: normal;
 		}
 
-		.search-toggle {
-			padding-left: 2rem;
-		}
 }
 
 .site-branding {
-	align-content: flex-start;
+	.tent-logo {
+		width: 50px;
+		height: 33px;
+	}
+}
+
+
+
+
+
+// .navbar-fixed-top.scrolled {
+// 	background-color: #fff !important;
+// 	transition: background-color 200ms linear;
+//   }
+
+
+	
+
 		
+
+//SEARCH RESULTS PAGE 
+
+.search-results {
+	.page-title {
+		text-transform: uppercase;
+		font-family: $font__header;
+		font-size: 2.4rem;
+		letter-spacing: 2px;
+	
+	.entry-title a {
+			font-family: $font__main;
+			font-size: 2rem;
+			text-decoration: none;
+			color: $color__link;
+
+	}
+	}
 }
 
-.tent-logo {
-	width: 50px;
-	height: 33px;
-}
-
-.search-container {
-	display: inline-block;
-}
-
-.fa-search {
-	line-height: 1;
-}
-
-.search-field { display:none; }
 

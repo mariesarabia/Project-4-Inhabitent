@@ -323,8 +323,8 @@
 }
 
 .product-box {
-	flex: 0 1 23%;
 	width: 23%;
+	flex: 0 1 23%;
 	margin-bottom: 1.5rem;
 	border: 1px solid $color__rule;
 		h2 {
@@ -342,7 +342,6 @@
 	left: 50%;
 }
 
-//
 
 //ARCHIVE PRODUCTS PAGE 
 
@@ -380,7 +379,6 @@
 			}
 	}
 }
-
 
 
 .post-type-archive,
@@ -436,27 +434,27 @@
 
 
 
-
-
-
-
-
-
-
-
 // JOURNAL
 
-.blog .entry-header h2 {
-	background-color: $color__link;
-	color: $color__reverse;
-	font-family: $font__header;
-	text-transform: uppercase;
-	font-size: 2rem;
-	left: 0;
-	// margin: 0.75rem 1.5rem; need this?
-	position: absolute;
-		a {
-			text-decoration: none;
-		}
 
-}
+.blog {
+	entry-header {
+		position: relative; 
+			
+		h2 {
+			background-color: $color__link;
+			color: $color__reverse;
+			font-family: $font__header;
+			text-transform: uppercase;
+			font-size: 2rem;
+			left: 0;
+			position: absolute;		
+		}
+		}	
+	}
+
+	.img {
+		height: auto;
+		max-width: 100%;
+	}
+

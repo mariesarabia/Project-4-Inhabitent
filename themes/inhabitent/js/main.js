@@ -1,3 +1,5 @@
+//SEARCH TOGGLE 
+
 (function( $ ) {
  $('.search-toggle').on('click', function(){
      $('.search-field').toggle('slow');
@@ -12,3 +14,12 @@
  });
 
 })( jQuery ); 
+
+//MENU 
+
+(function ( $ ) {
+    $(document).scroll(function () {
+      var $nav = $('.navbar-fixed-top');
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
