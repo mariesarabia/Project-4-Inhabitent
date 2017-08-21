@@ -48,65 +48,197 @@
 	display: block;
 }
 
-//additions// 
 
 
 
+//NAVIGATION BAR 
 
 
-//all pages 
+.site-header {
+	position: fixed;
+	z-index: 99999;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	border-bottom: 1px solid $color__rule;
+	background-color: hsla(0, 0%, 100%, 0.85);
 
+	.container {
+		width: 1120px;
+		display: flex;
+		justify-content: space-between;
+	}
 
-
-.home .site-content,
-.page-template-about .site-content {
-	padding-top: 0;
+	.search-container {
+		padding-left: 1.5rem;
+	}
 }
 
-.page-template-default .site-content,
-.tax-product-type .site-content {
-	padding-top: 50px;
+.main-navigation {
+	font-family: $font__header;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	align-content: flex-end;
+	width: 50%;
+		 a{
+			 color: $color__link;
+		 }
 }
 
+.site-branding {
+	.tent-logo {
+		width: 50px;
+		height: 33px;
+	}
+}
 
-//PAGE WITH SIDEBAR 
+.search-field { 
+	display: none; 
+}
 
-.page-template-default:not(.home),
-.blog,
-.page-template-home,
-.single-post,
-.search-results {
+.search-submit { @extend .screen-reader-text; }
+
+.field-set {
+	border: 0;
+	margin: 0;
+}
+
+.search-toggle {
+	color: $color__link;
+}
+
+//FULL-WIDTH PAGES
+
+.post-type-archive-product,
+.tax-product-type,
+.product-template-default, {
+	.content-area {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
 	.site-content {
+		padding-top: 50px;
 		display: flex;
 		margin-left: auto;
 		margin-right: auto;
 		width: 1120px;
-		padding-top: 50px;
-	}
-	.widget-area {
-		width: 27%;
-		padding-left: 5%;
-		h2.widget-title {
-			font-family: $font__header;
-			text-transform: uppercase;
-			font-size: 1.5rem;
-			letter-spacing: 2px;
-		}
-		a {
-			text-decoration: none;
-		}
 	}
 }
 
-.page-template-default:not(.home) .content-area,
-.blog .content-area,
-.page-template-home .content-area,
-.single-post .content-area,
-.error404 .content-area,
-.search-results .content-area {
-	width: 73%;
-	border-right: 1px solid $color__rule;
+//PRODUCT-TYPE PAGE
+
+.post-type-archive-product .page-header {
+	border-bottom: 1px dashed $color__rule;
+	margin-bottom: 3rem;
 }
+
+.product-type-list {
+	font-size: 1.2rem;
+	font-family: $font__header;
+	text-transform: uppercase;
+	margin-left: 0;
+	padding: 0;
+	text-align: center;
+		ul {
+			
+		}
+		li {
+			list-style: none;
+			display: inline;
+			margin: 0 1.5rem;
+				p {
+					margin-bottom: 1.5rem;
+				}
+		}
+		a {
+			text-decoration: none;
+			color: $color__link;
+		}
+}
+
+.archive .page-title {
+	font-family: $font__header;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+//PRODUCT PAGE
+
+.single-product {
+	
+	.hentry {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 0;
+	}
+	.product-content-container, .product-image-container {
+		width: 48%;
+	}
+}
+
+.single-product .entry-title {
+	margin-top: 0;
+	color: $color__accent;
+	font-family: $font__header;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.single-product .hentry .price {
+	font-size: 1.8rem;
+	margin-top: 0;
+}
+
+//2-COLUMN LAYOUT
+
+.blog,
+.single.single-post,
+.page-template-default:not(.home),
+.error404,
+.search-results {
+	.content-area {
+		width: 73%;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		border-right: 1px solid $color__rule;
+		padding-right: 5%;
+	}
+	.site-content {
+		padding-top: 50px;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1120px;
+
+		.widget-area {
+			width: 27%;
+			padding-left: 5%;
+			padding-top: 1.5rem;
+
+			h2.widget-title {
+				font-family: $font__header;
+				text-transform: uppercase;
+				font-size: 1.5rem;
+				letter-spacing: 2px;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	
+}
+
+//JOURNAL PAGE - .blog
+
+//JOURNAL - SINGLE POST
+
+
 
 //FIND US PAGE
 
@@ -117,9 +249,6 @@
 		text-transform: uppercase;
 		font-size: 2rem;
 		letter-spacing: 2px;
-	}
-	.content-area {
-		padding-right: 5%;
 	}
 	h1 {
 		text-transform: uppercase;
@@ -168,90 +297,7 @@
 
 
 
-//green headline box 
-.post .entry-title {
-	background-color: $color__link;
-}
-
-//SHOP STUFF PAGE
-
-.post-type-archive-product .page-header {
-	border-bottom: 1px dashed $color__rule;
-	margin-bottom: 3rem;
-}
-
-.product-type-list {
-	font-size: 1.2rem;
-	font-family: $font__header;
-	text-transform: uppercase;
-	margin-left: 0;
-	padding: 0;
-	text-align: center;
-		ul {
-			
-		}
-		li {
-			list-style: none;
-			display: inline;
-			margin: 0 1.5rem;
-				p {
-					margin-bottom: 1.5rem;
-				}
-		}
-		a {
-			text-decoration: none;
-			color: $color__link;
-		}
-}
-
-
-//SHOP STUFF PAGE 
-
-.archive .page-title {
-	font-family: $font__header;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 2.5rem;
-}
-
-//SINGLE PRODUCT PAGE 
-
-	
-.single-product .site-content {
-	width: 1120px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.single-product {
-	
-	.hentry {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 0;
-	}
-	.product-content-container, .product-image-container {
-		width: 48%;
-	}
-}
-
-.single-product .entry-title {
-	margin-top: 0;
-	color: $color__accent;
-	font-family: $font__header;
-	font-weight: bold;
-	font-style: normal;
-	font-size: 2.4rem;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-.single-product .hentry .price {
-	font-size: 1.8rem;
-	margin-top: 0;
-}
-
-//ERROR 404 PAGE 
+//ERROR 404 PAGE
 
 .error404 {
 	.page-title {
@@ -264,7 +310,6 @@
 	.search-toggle {
 		display: none;
 	}
-
 	.widget {
 		margin: 0 0 3rem;
 	}
@@ -293,65 +338,10 @@
 			text-transform: uppercase;
 		}
 	}
-	.content-area {
-		padding-bottom: 3rem;
-	}
-}
-
-//NAVIGATION BAR 
-
-
-.site-header {
-	position: fixed;
-	z-index: 99999;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	border-bottom: 1px solid $color__rule;
-	background-color: hsla(0, 0%, 100%, 0.85);
-	padding: 0.5rem 0;
-
-	.container {
-		width: 1120px;
-		display: flex;
-		justify-content: space-between;
-	}
-}
-
-.main-navigation {
-	font-family: $font__header;
-	text-transform: uppercase;
-	align-content: flex-end;
-	width: 50%;
-		li {
-			font-style: bold;
-			font-weight: normal;
-		}
-
-}
-
-.site-branding {
-	.tent-logo {
-		width: 50px;
-		height: 33px;
-	}
 }
 
 
-
-
-
-// .navbar-fixed-top.scrolled {
-// 	background-color: #fff !important;
-// 	transition: background-color 200ms linear;
-//   }
-
-
-	
-
-		
-
-//SEARCH RESULTS PAGE 
+//SEARCH RESULTS PAGE
 
 .search-results {
 	.page-title {
@@ -365,9 +355,9 @@
 			font-size: 2rem;
 			text-decoration: none;
 			color: $color__link;
-
 	}
 	}
 }
+
 
 
