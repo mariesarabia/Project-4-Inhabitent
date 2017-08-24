@@ -33,8 +33,8 @@ get_header(); ?>
 </section>
 		
 		
-			<section class="journal-container">
-				<h2>Inhabitent Journal</h2>
+<section class="journal-container">
+	<h2>Inhabitent Journal</h2>
 					
 		<?php
 		$args = array( 
@@ -42,7 +42,6 @@ get_header(); ?>
 			$journal_posts = get_posts( $args ); // returns an array of posts
 		?>
 		<ul>
-
 							<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 							
 						<li>
@@ -65,6 +64,39 @@ get_header(); ?>
 						
 		</div> <!-- journal-container -->
 		</section>
+
+<section class="adventures-container">
+		<h2>Latest Adventures</h2>
+		<ul class="adventure-posts">
+			<li class="canoe">
+				<div>
+					<h3>Getting Back to Nature in a Canoe</h3>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</li>
+			<li class="friends">
+				<div>
+					<h3>A Night with Friends at the Beach</h3>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</li>
+			<li class="mountain">
+				<div>
+					<h3>Taking in the View at Big Mountain</h3>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</li>
+			<li class="night-sky">
+				<div>
+					<h3>Star-Gazing at the Night Sky</h3>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</li>
+	
+	
+	
+		</ul>
+	</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -28,16 +28,6 @@
 	margin-left: auto;
 	width: 1120px;
 	margin-bottom: 3rem;
-		h2 {
-			font-size: 2.4rem;
-			text-transform: uppercase;
-			font-family: $font__header;
-			font-weight: normal;
-			font-style: normal;
-			color: $color__header;
-			text-align: center;
-			letter-spacing: 2px;
-		}
 }
 
 .home .product-type-grid {
@@ -79,23 +69,24 @@
 	font-size: 0.9rem;
 }
 
+//SHOP,JOURNAL, ADVENTURES
+.home h2 {
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	font-family: $font__header;
+	font-weight: normal;
+	font-style: normal;
+	color: $color__header;
+	text-align: center;
+	letter-spacing: 2px;
+}
 
+//JOURNAL CONTAINER 
 .home .journal-container {
 	margin-right: auto;
 	margin-left: auto;
 	width: 1120px;
 	margin-bottom: 4.5rem;
-	h2 {
-		font-size: 2.4rem;
-		text-transform: uppercase;
-		font-family: $font__header;
-		font-weight: normal;
-		font-style: normal;
-		color: $color__header;
-		text-align: center;
-		letter-spacing: 2px;
-	}
-
 	ul {
 		list-style: none;
 		display: flex;
@@ -148,6 +139,16 @@
 	flex-direction: row wrap;
 }
 
+//LATEST ADVENTURES CONTAINER
+
+.home .adventure-container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 1120px;
+	margin-bottom: 4.5rem;
+	height: 100vh;
+}
+
 //Front Page Journal
 
 .home .read-button {
@@ -176,32 +177,44 @@
 
 //LATEST ADVENTURES 
 
-.adventures-container {
-	margin-right: auto;
-	margin-left: auto;
-	width: 1120px;
-	margin-bottom: 4.5rem;
-	h2 {
-		font-size: 2.4rem;
-		text-transform: uppercase;
-		font-family: $font__header;
-		font-weight: normal;
-		font-style: normal;
-		color: $color__header;
-		text-align: center;
-		letter-spacing: 2px;
-	}
-}
 
 .adventure-posts {
-	display: grid;
-	flex-flow: column;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	width: 100%;
-	height: 540px;
-	background-color: blue;
 	list-style: none;
 	padding-left: 0;
-	
+	width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+	 h3 {
+		font-size: 3rem;
+		color: #fff;
+		font-weight: 300;
+		font-style: normal;
+		line-height: 1;
+	 }
+	 .canoe {
+		 max-width: 50%;
+		 height: 100vh;
+		 position: relative;
+		 bottom: 0;
+		 left: 0;
+	 }
+	 .mountains {
+		max-width: 50%;
+		height: 50%;
+	 }
+	 .friends {
+		max-width: 50%;
+		height: 50%;
+	}
+	.night-sky {
+		max-width: 25%;
+		height: 50%;
+	}
 }
 
 // .adventure-posts {
@@ -226,14 +239,17 @@
 	background: url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat;
 	background-size: cover;
 	max-width: calc(100% / 2);
+	height: 50%;
 }
 .mountain {
 	background-image: url('../../images/adventure-photos/mountain-hikers.jpg');
 	max-width: calc(100% / 3);
+	height: 50%;
 }
 .night-sky {
 	background-image: url('../../images/adventure-photos/night-sky.jpg');
 	max-width: calc(100% / 3);
+	height: 50%;
 }
 
 //ABOUT PAGE 
@@ -455,3 +471,47 @@
 		max-width: 100%;
 	}
 
+.single.single-post {
+
+	.entry-header {
+		position: relative;
+	}
+	.wp-post-image {
+	
+	}
+	h1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-family: $font__header;
+		background-color: $color__link;
+		color: $color__reverse;
+		margin-top: 2.25rem;
+		max-width: 75%;
+		text-transform: uppercase;
+		padding: 0.75rem 2.5rem 0.75rem 1.5rem;
+		line-height: 2.5rem;
+	}
+
+	.entry-meta {
+		background-color: $color__link;
+		color: $color__reverse;
+		width: 50%;
+		position: absolute;
+		margin-right: 0;
+		bottom: 0;
+		right: 0;
+		margin-bottom: 0.5rem;
+		text-align: center;
+		font-family: $font__header;
+		font-size: 1rem;
+		text-transform: uppercase;
+	}
+		a {
+			color: $color__link;
+		}
+		.comments-link a {
+			color: $color__reverse;
+		}
+
+}

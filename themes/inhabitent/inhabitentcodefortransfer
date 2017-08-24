@@ -1,0 +1,42 @@
+//ABOUT PAGE 
+
+.page-template-about {
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 1120px;
+		font-size: 1rem;
+	}
+	
+	.entry-title {
+		font-family: $font__header;
+		text-transform: uppercase;
+		text-align: center;
+		color: $color__reverse;
+		font-size: 3rem;
+		margin-top: 0;
+		transform: translate(-50%, -50%);
+		position: absolute;
+	}
+
+	.entry-content {
+		max-width: 800px;
+		margin: 3rem auto;
+		line-height: $font__line-height-body;
+		h2 {
+			font-family: $font__header;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 2rem;
+		}	
+	} 
+
+	.entry-header {
+		position: relative;
+		.container {
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+	}
+}

@@ -1053,15 +1053,6 @@ object {
   margin-left: auto;
   width: 1120px;
   margin-bottom: 3rem; }
-  .shop-container h2 {
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    font-family: Novecentosanswide, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #2f1339;
-    text-align: center;
-    letter-spacing: 2px; }
 
 .home .product-type-grid {
   display: -ms-flexbox;
@@ -1098,20 +1089,21 @@ object {
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem; }
 
+.home h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #2f1339;
+  text-align: center;
+  letter-spacing: 2px; }
+
 .home .journal-container {
   margin-right: auto;
   margin-left: auto;
   width: 1120px;
   margin-bottom: 4.5rem; }
-  .home .journal-container h2 {
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    font-family: Novecentosanswide, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #2f1339;
-    text-align: center;
-    letter-spacing: 2px; }
   .home .journal-container ul {
     list-style: none;
     display: -ms-flexbox;
@@ -1161,6 +1153,13 @@ object {
   -ms-flex-direction: row wrap;
       flex-direction: row wrap; }
 
+.home .adventure-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1120px;
+  margin-bottom: 4.5rem;
+  height: 100vh; }
+
 .home .read-button {
   border: 1px solid #000;
   position: absolute;
@@ -1181,31 +1180,42 @@ object {
   text-transform: uppercase;
   font-family: Novecentosanswide, sans-serif; }
 
-.adventures-container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 1120px;
-  margin-bottom: 4.5rem; }
-  .adventures-container h2 {
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    font-family: Novecentosanswide, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #2f1339;
-    text-align: center;
-    letter-spacing: 2px; }
-
 .adventure-posts {
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-flow: column;
-      flex-flow: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 100%;
-  height: 540px;
-  background-color: blue;
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  .adventure-posts h3 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1; }
+  .adventure-posts .canoe {
+    max-width: 50%;
+    height: 100vh;
+    position: relative;
+    bottom: 0;
+    left: 0; }
+  .adventure-posts .mountains {
+    max-width: 50%;
+    height: 50%; }
+  .adventure-posts .friends {
+    max-width: 50%;
+    height: 50%; }
+  .adventure-posts .night-sky {
+    max-width: 25%;
+    height: 50%; }
 
 .canoe {
   background: url("../../images/adventure-photos/canoe-girl.jpg") no-repeat;
@@ -1216,15 +1226,18 @@ object {
 .friends {
   background: url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat;
   background-size: cover;
-  max-width: calc(100% / 2); }
+  max-width: calc(100% / 2);
+  height: 50%; }
 
 .mountain {
   background-image: url("../../images/adventure-photos/mountain-hikers.jpg");
-  max-width: calc(100% / 3); }
+  max-width: calc(100% / 3);
+  height: 50%; }
 
 .night-sky {
   background-image: url("../../images/adventure-photos/night-sky.jpg");
-  max-width: calc(100% / 3); }
+  max-width: calc(100% / 3);
+  height: 50%; }
 
 .page-template-about .container {
   margin-left: auto;
@@ -1403,3 +1416,39 @@ object {
 .img {
   height: auto;
   max-width: 100%; }
+
+.single.single-post .entry-header {
+  position: relative; }
+
+.single.single-post h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Novecentosanswide, sans-serif;
+  background-color: #248A83;
+  color: #fff;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  text-transform: uppercase;
+  padding: 0.75rem 2.5rem 0.75rem 1.5rem;
+  line-height: 2.5rem; }
+
+.single.single-post .entry-meta {
+  background-color: #248A83;
+  color: #fff;
+  width: 50%;
+  position: absolute;
+  margin-right: 0;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase; }
+
+.single.single-post a {
+  color: #248A83; }
+
+.single.single-post .comments-link a {
+  color: #fff; }
