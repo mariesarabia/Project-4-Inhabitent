@@ -1417,9 +1417,11 @@ object {
   height: auto;
   max-width: 100%; }
 
+.blog .entry-header,
 .single.single-post .entry-header {
   position: relative; }
 
+.blog h1,
 .single.single-post h1 {
   position: absolute;
   top: 0;
@@ -1433,6 +1435,7 @@ object {
   padding: 0.75rem 2.5rem 0.75rem 1.5rem;
   line-height: 2.5rem; }
 
+.blog .entry-meta,
 .single.single-post .entry-meta {
   background-color: #248A83;
   color: #fff;
@@ -1447,8 +1450,10 @@ object {
   font-size: 1rem;
   text-transform: uppercase; }
 
+.blog a,
 .single.single-post a {
   color: #248A83; }
 
+.blog .comments-link a,
 .single.single-post .comments-link a {
   color: #fff; }
