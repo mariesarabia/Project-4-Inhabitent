@@ -744,6 +744,8 @@ a {
         justify-content: space-between; }
   .site-header .search-container {
     padding-left: 1.5rem; }
+  .site-header .search-field {
+    display: none; }
 
 .main-navigation {
   font-family: Novecentosanswide, sans-serif;
@@ -759,9 +761,6 @@ a {
 .site-branding .tent-logo {
   width: 50px;
   height: 33px; }
-
-.search-field {
-  display: none; }
 
 .field-set {
   border: 0;
@@ -923,36 +922,6 @@ a {
   font-weight: 300;
   font-style: normal;
   border: none; }
-
-.error404 .page-title {
-  text-transform: uppercase;
-  font-family: Novecentosanswide, sans-serif;
-  font-size: 2.4rem;
-  letter-spacing: 2px; }
-
-.error404 .search-toggle {
-  display: none; }
-
-.error404 .widget {
-  margin: 0 0 3rem; }
-
-.error404 .widget_recent_entries .widgettitle {
-  font-family: Novecentosanswide, sans-serif;
-  text-transform: uppercase; }
-
-.error404 .widget_recent_entries a {
-  text-decoration: none; }
-
-.error404 .widget_categories .widget-title {
-  font-family: Novecentosanswide, sans-serif;
-  text-transform: uppercase; }
-
-.error404 .widget_categories a {
-  text-decoration: none; }
-
-.error404 .widget_archive .widgettitle {
-  font-family: Novecentosanswide, sans-serif;
-  text-transform: uppercase; }
 
 .search-results .page-title {
   text-transform: uppercase;
@@ -1245,15 +1214,6 @@ object {
   width: 1120px;
   font-size: 1rem; }
 
-.page-template-about .entry-title {
-  font-family: Novecentosanswide, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  font-size: 3rem;
-  margin-top: auto;
-  margin-bottom: auto; }
-
 .page-template-about .entry-content {
   max-width: 800px;
   margin: 3rem auto;
@@ -1402,9 +1362,9 @@ object {
   position: relative;
   z-index: 1; }
 
-.blog entry-header {
+.blog .entry-header {
   position: relative; }
-  .blog entry-header h2 {
+  .blog .entry-header h2 {
     background-color: #248A83;
     color: #fff;
     font-family: Novecentosanswide, sans-serif;
@@ -1416,6 +1376,20 @@ object {
 .img {
   height: auto;
   max-width: 100%; }
+
+.read_more {
+  border: 1px solid #000;
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none; }
+  .read_more a {
+    color: #000; }
+  .read_more .button-hover {
+    background-color: #248A83; }
 
 .blog .entry-header,
 .single.single-post .entry-header {
@@ -1457,3 +1431,52 @@ object {
 .blog .comments-link a,
 .single.single-post .comments-link a {
   color: #fff; }
+
+.blog .read-button {
+  border: 1px solid #000;
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none; }
+  .blog .read-button a {
+    color: #000; }
+  .blog .read-button .button:hover {
+    background-color: #248A83; }
+
+.error404 .page-title {
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 2px; }
+
+.error404 .search-form {
+  border: 0;
+  margin: 0; }
+
+.error404 .fieldset {
+  border: 0;
+  margin: 0; }
+
+.error404 .widget {
+  margin: 0 0 3rem; }
+
+.error404 .widget_recent_entries .widgettitle {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase; }
+
+.error404 .widget_recent_entries a {
+  text-decoration: none; }
+
+.error404 .widget_categories .widget-title {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase; }
+
+.error404 .widget_categories a {
+  text-decoration: none; }
+
+.error404 .widget_archive .widgettitle {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase; }

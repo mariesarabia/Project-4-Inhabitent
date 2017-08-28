@@ -262,15 +262,15 @@
 		font-size: 1rem;
 	}
 	
-	.entry-title {
-		font-family: $font__header;
-		text-transform: uppercase;
-		text-align: center;
-		color: $color__reverse;
-		font-size: 3rem;
-		margin-top: auto;
-		margin-bottom: auto;
-	}
+	// .entry-title {
+	// 	font-family: $font__header;
+	// 	text-transform: uppercase;
+	// 	text-align: center;
+	// 	color: $color__reverse;
+	// 	font-size: 3rem;
+	// 	margin-top: auto;
+	// 	margin-bottom: auto;
+	// }
 
 	.entry-content {
 		max-width: 800px;
@@ -451,7 +451,8 @@
 // JOURNAL
 
 .blog {
-	entry-header {
+
+	.entry-header {
 		position: relative; 
 			
 		h2 {
@@ -470,6 +471,25 @@
 		height: auto;
 		max-width: 100%;
 	}
+
+	.read_more {
+		border: 1px solid $color__border;
+		position: absolute;
+		left: 0.75rem;
+		bottom: 0.75rem;
+		font-family: $font__header;
+		font-size: 0.9rem;
+		padding: 0.75rem 1.5rem;
+		text-decoration: none;
+			a {
+				color: $color__border;
+			}
+			.button-hover {
+				background-color: $color__link;
+			}
+		}
+
+			
 
 .blog,
 .single.single-post {
@@ -516,3 +536,21 @@
 		}
 
 }
+
+.blog .read-button {
+	border: 1px solid $color__border;
+	position: absolute;
+	left: 0.75rem;
+	bottom: 0.75rem;
+	font-family: $font__header;
+	font-size: 0.9rem;
+	padding: 0.75rem 1.5rem;
+	text-decoration: none;
+		a {
+			color: $color__border;
+		}
+		.button:hover {
+			background-color: $color__link;
+		}
+}
+

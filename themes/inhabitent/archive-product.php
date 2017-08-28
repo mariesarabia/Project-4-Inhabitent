@@ -41,8 +41,8 @@ get_header(); ?>
 			<div class="archive-product-box">
 				<?php
 					get_template_part( 'template-parts/content' , 'product-loop' );
-				?>
-</div>
+				?>	
+			</div>
 			<?php endwhile; ?>
 			</div>
 		<?php else : ?>

@@ -35,19 +35,18 @@ get_header(); ?>
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
+		<div class="read_more">
+		<a href="<?php echo esc_url( get_permalink() )?>">read more &rarr;</a>
+	</div>
 	</div><!-- .entry-content -->
 
+	
+
 	<!-- <footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
-	</footer>.entry-footer -->
+		<!-- <?php red_starter_entry_footer(); ?> -->
+	</footer>
 </article><!-- #post-## -->
-				<a class="read-button" href="<?php the_permalink(); ?>">Read More</a>
+				
 
 			<?php endwhile; ?>
 

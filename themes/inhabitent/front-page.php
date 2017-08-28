@@ -66,6 +66,11 @@ get_header(); ?>
 		</section>
 
 <section class="adventures-container">
+
+
+
+
+
 		<h2>Latest Adventures</h2>
 		<ul class="adventure-posts">
 			<li class="canoe">

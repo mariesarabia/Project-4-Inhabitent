@@ -1,0 +1,53 @@
+//ERROR 404 PAGE
+
+.error404 {
+	.page-title {
+		text-transform: uppercase;
+		font-family: $font__header;
+		font-size: 2.4rem;
+		letter-spacing: 2px;
+    }
+    
+    fieldset {
+        border: 0;
+    }
+
+	.search-form {
+		border: 0;
+		margin: 0;
+	}
+
+	.fieldset {
+		border: 0;
+		margin: 0;
+	}
+
+	.widget {
+		margin: 0 0 3rem;
+	}
+	.widget_recent_entries {
+		.widgettitle, {
+			font-family: $font__header;
+			text-transform: uppercase;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+	.widget_categories {
+		.widget-title {
+			font-family: $font__header;
+			text-transform: uppercase;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+	
+	.widget_archive {
+		.widgettitle {
+			font-family: $font__header;
+			text-transform: uppercase;
+		}
+	}
+}
