@@ -15,3 +15,15 @@
 
 })( jQuery ); 
 
+
+//navigation bar 
+
+(function( $ ){
+$(window).scroll(function() {
+    if ($(document).scrollTop() < 359) {
+      $('site-header').addClass('scrolled');
+    } else {
+      $('site-header').removeClass('scrolled');
+    }
+  });
+})( jQuery ); 

@@ -39,7 +39,7 @@ function inhabitent_login_title() {
 add_filter ( 'login_headertitle', 'inhabitent_login_title' );
 
 function inhabitent_url( $url ) {
-    return get_bloginfo( 'url' );
+    return home_url( 'url' );
 }
 add_filter( 'login_headerurl', 'inhabitent_url' );
 

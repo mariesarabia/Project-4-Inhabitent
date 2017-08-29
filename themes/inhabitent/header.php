@@ -38,7 +38,7 @@
 					
 					<div class="search-container">
 						<span class="search-toggle"><i class="fa fa-search"></i></span>
-						<!-- <?php get_search_form(); ?> -->
+						<?php get_search_form(); ?>
 					</div>
 					</div>
 				</nav>

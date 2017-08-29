@@ -70,12 +70,34 @@
 	}
 
 	.search-container {
-		padding-left: 1.5rem;
+		display: flex;
 	}
+
 
 	.search-field { 
 		display: none; 
+		align-content: flex-end;
+
+	.screen-reader-text {
+		border: none;
+		border-radius: 0;
 	}
+
+	}
+}
+
+.home .site-header.scrolled {
+	background-color: transparent;
+	transition: background-color 200ms linear;
+}
+
+// .navbar-fixed-top.scrolled {
+// 	background-color: #fff !important;
+// 	transition: background-color 200ms linear;
+//   }
+
+.main-navigation-container {
+	display: flex;
 }
 
 .main-navigation {

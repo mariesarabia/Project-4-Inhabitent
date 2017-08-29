@@ -7,7 +7,6 @@ Description: Inhabitent Camping Supply Co. website in Vancouver
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -743,9 +742,23 @@ a {
     -ms-flex-pack: justify;
         justify-content: space-between; }
   .site-header .search-container {
-    padding-left: 1.5rem; }
+    display: -ms-flexbox;
+    display: flex; }
   .site-header .search-field {
-    display: none; }
+    display: none;
+    -ms-flex-line-pack: end;
+        align-content: flex-end; }
+    .site-header .search-field .screen-reader-text, .site-header .search-field .search-submit {
+      border: none;
+      border-radius: 0; }
+
+.home .site-header.scrolled {
+  background-color: transparent;
+  transition: background-color 200ms linear; }
+
+.main-navigation-container {
+  display: -ms-flexbox;
+  display: flex; }
 
 .main-navigation {
   font-family: Novecentosanswide, sans-serif;
@@ -999,7 +1012,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .hero {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
   background-size: cover, cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -1185,28 +1198,6 @@ object {
   .adventure-posts .night-sky {
     max-width: 25%;
     height: 50%; }
-
-.canoe {
-  background: url("../../images/adventure-photos/canoe-girl.jpg") no-repeat;
-  background-size: cover;
-  max-width: calc(100% / 2);
-  height: 100%; }
-
-.friends {
-  background: url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat;
-  background-size: cover;
-  max-width: calc(100% / 2);
-  height: 50%; }
-
-.mountain {
-  background-image: url("../../images/adventure-photos/mountain-hikers.jpg");
-  max-width: calc(100% / 3);
-  height: 50%; }
-
-.night-sky {
-  background-image: url("../../images/adventure-photos/night-sky.jpg");
-  max-width: calc(100% / 3);
-  height: 50%; }
 
 .page-template-about .container {
   margin-left: auto;
@@ -1446,11 +1437,96 @@ object {
   .blog .read-button .button:hover {
     background-color: #248A83; }
 
+.adventures-container {
+  padding-bottom: 4.5rem; }
+
+.adventures {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-flexbox;
+  display: flex;
+  height: 540px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: relative; }
+  .adventures h3 {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 3rem; }
+  .adventures .read-button-adv {
+    border: 1px solid #fff;
+    position: absolute;
+    left: 0.75rem;
+    bottom: 0.75rem;
+    font-family: Novecentosanswide, sans-serif;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff; }
+    .adventures .read-button-adv a {
+      color: #fff; }
+    .adventures .read-button-adv .button-hover {
+      background-color: #248A83; }
+  .adventures .canoe {
+    width: 50%;
+    height: auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 1.5rem; }
+    .adventures .canoe h3 {
+      font-size: 3rem;
+      margin: 1.5rem; }
+  .adventures .adventure-box-2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 50%; }
+    .adventures .adventure-box-2 .friends {
+      width: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat;
+      background-size: cover;
+      margin-bottom: 20px;
+      position: relative;
+      box-sizing: border-box;
+      padding: 1.5rem; }
+      .adventures .adventure-box-2 .friends h3 {
+        font-size: 2.4rem; }
+    .adventures .adventure-box-2 .mountain {
+      width: 50%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat;
+      background-size: cover;
+      position: relative;
+      box-sizing: border-box;
+      padding: 1.5rem; }
+      .adventures .adventure-box-2 .mountain h3 {
+        font-size: 1.6rem;
+        line-height: 2rem; }
+    .adventures .adventure-box-2 .night-sky {
+      width: 50%;
+      background: url("../../images/adventure-photos/night-sky.jpg") no-repeat;
+      background-size: cover;
+      position: relative;
+      box-sizing: border-box;
+      padding: 1.5rem; }
+      .adventures .adventure-box-2 .night-sky h3 {
+        font-size: 1.6rem;
+        line-height: 2rem; }
+
 .error404 .page-title {
   text-transform: uppercase;
   font-family: Novecentosanswide, sans-serif;
   font-size: 2.4rem;
   letter-spacing: 2px; }
+
+.error404 fieldset {
+  border: 0; }
 
 .error404 .search-form {
   border: 0;
