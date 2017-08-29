@@ -536,7 +536,7 @@ a {
   margin-left: auto;
   width: 1120px; }
   .site-header .container li {
-    padding-left: 30px; }
+    padding-left: 20px; }
 
 .white-logo-tent {
   width: 50px;
@@ -747,7 +747,14 @@ a {
   .site-header .search-field {
     display: none;
     -ms-flex-line-pack: end;
-        align-content: flex-end; }
+        align-content: flex-end;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    text-transform: uppercase;
+    font-family: Novecentosanswide, sans-serif;
+    line-height: 1;
+    padding-left: 10px; }
     .site-header .search-field .screen-reader-text, .site-header .search-field .search-submit {
       border: none;
       border-radius: 0; }
@@ -758,18 +765,21 @@ a {
 
 .main-navigation-container {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
 
 .main-navigation {
   font-family: Novecentosanswide, sans-serif;
   font-weight: 300;
   font-style: normal;
   text-transform: uppercase;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  width: 50%; }
+  width: 75%; }
   .main-navigation a {
     color: #248A83; }
+
+.menu-main-menu-container {
+  padding-right: 20px; }
 
 .site-branding .tent-logo {
   width: 50px;
@@ -1162,43 +1172,6 @@ object {
   text-transform: uppercase;
   font-family: Novecentosanswide, sans-serif; }
 
-.adventure-posts {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  width: 100%;
-  list-style: none;
-  padding-left: 0;
-  width: 1120px;
-  margin-left: auto;
-  margin-right: auto; }
-  .adventure-posts h3 {
-    font-size: 3rem;
-    color: #fff;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 1; }
-  .adventure-posts .canoe {
-    max-width: 50%;
-    height: 100vh;
-    position: relative;
-    bottom: 0;
-    left: 0; }
-  .adventure-posts .mountains {
-    max-width: 50%;
-    height: 50%; }
-  .adventure-posts .friends {
-    max-width: 50%;
-    height: 50%; }
-  .adventure-posts .night-sky {
-    max-width: 25%;
-    height: 50%; }
-
 .page-template-about .container {
   margin-left: auto;
   margin-right: auto;
@@ -1370,7 +1343,6 @@ object {
 
 .read_more {
   border: 1px solid #000;
-  position: absolute;
   left: 0.75rem;
   bottom: 0.75rem;
   font-family: Novecentosanswide, sans-serif;
@@ -1476,7 +1448,8 @@ object {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    border-right: 10px solid #fff; }
     .adventures .canoe h3 {
       font-size: 3rem;
       margin: 1.5rem; }
@@ -1492,10 +1465,11 @@ object {
       width: 100%;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat;
       background-size: cover;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       position: relative;
       box-sizing: border-box;
-      padding: 1.5rem; }
+      padding: 1.5rem;
+      border-left: 10px solid #fff; }
       .adventures .adventure-box-2 .friends h3 {
         font-size: 2.4rem; }
     .adventures .adventure-box-2 .mountain {
@@ -1504,7 +1478,10 @@ object {
       background-size: cover;
       position: relative;
       box-sizing: border-box;
-      padding: 1.5rem; }
+      padding: 1.5rem;
+      border-right: 10px solid #fff;
+      border-left: 10px solid #fff;
+      border-top: 10px solid #fff; }
       .adventures .adventure-box-2 .mountain h3 {
         font-size: 1.6rem;
         line-height: 2rem; }
@@ -1514,7 +1491,9 @@ object {
       background-size: cover;
       position: relative;
       box-sizing: border-box;
-      padding: 1.5rem; }
+      padding: 1.5rem;
+      border-top: 10px solid #fff;
+      border-left: 10px solid #fff; }
       .adventures .adventure-box-2 .night-sky h3 {
         font-size: 1.6rem;
         line-height: 2rem; }

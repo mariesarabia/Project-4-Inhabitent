@@ -178,44 +178,44 @@
 //LATEST ADVENTURES 
 
 
-.adventure-posts {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 100%;
-	list-style: none;
-	padding-left: 0;
-	width: 1120px;
-	margin-left: auto;
-	margin-right: auto;
-	 h3 {
-		font-size: 3rem;
-		color: #fff;
-		font-weight: 300;
-		font-style: normal;
-		line-height: 1;
-	 }
-	 .canoe {
-		 max-width: 50%;
-		 height: 100vh;
-		 position: relative;
-		 bottom: 0;
-		 left: 0;
-	 }
-	 .mountains {
-		max-width: 50%;
-		height: 50%;
-	 }
-	 .friends {
-		max-width: 50%;
-		height: 50%;
-	}
-	.night-sky {
-		max-width: 25%;
-		height: 50%;
-	}
-}
+// .adventure-posts {
+// 	display: flex;
+// 	flex-direction: row;
+// 	flex-wrap: wrap;
+// 	justify-content: space-between;
+// 	width: 100%;
+// 	list-style: none;
+// 	padding-left: 0;
+// 	width: 1120px;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	 h3 {
+// 		font-size: 3rem;
+// 		color: #fff;
+// 		font-weight: 300;
+// 		font-style: normal;
+// 		line-height: 1;
+// 	 }
+// 	 .canoe {
+// 		 max-width: 50%;
+// 		 height: 100vh;
+// 		 position: relative;
+// 		 bottom: 0;
+// 		 left: 0;
+// 	 }
+// 	 .mountains {
+// 		max-width: 50%;
+// 		height: 50%;
+// 	 }
+// 	 .friends {
+// 		max-width: 50%;
+// 		height: 50%;
+// 	}
+// 	.night-sky {
+// 		max-width: 25%;
+// 		height: 50%;
+// 	}
+// }
 
 // .adventure-posts {
 // 	display: flex;
@@ -469,7 +469,7 @@
 
 	.read_more {
 		border: 1px solid $color__border;
-		position: absolute;
+		// position: absolute;
 		left: 0.75rem;
 		bottom: 0.75rem;
 		font-family: $font__header;
@@ -598,6 +598,7 @@
 		background-size: cover;
 		box-sizing: border-box;
 		padding: 1.5rem;
+		border-right: 10px solid $color__reverse;
 
 		h3 {
 			font-size: 3rem;
@@ -616,10 +617,11 @@
 			background: linear-gradient(180deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
 			url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat;
 			background-size: cover;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			position: relative;
 			box-sizing: border-box;
 			padding: 1.5rem;
+			border-left: 10px solid $color__reverse;
 
 			h3 {
 				font-size: 2.4rem;
@@ -634,6 +636,10 @@
 			position: relative;
 			box-sizing: border-box;
 			padding: 1.5rem;
+			border-right: 10px solid $color__reverse;
+			border-left: 10px solid $color__reverse;
+			border-top: 10px solid $color__reverse;
+			
 
 			h3 {
 				font-size: 1.6rem;
@@ -648,6 +654,8 @@
 			position: relative;
 			box-sizing: border-box;
 			padding: 1.5rem;
+			border-top: 10px solid $color__reverse;
+			border-left: 10px solid $color__reverse;
 
 			h3 {
 				font-size: 1.6rem;

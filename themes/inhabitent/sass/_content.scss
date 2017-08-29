@@ -77,6 +77,13 @@
 	.search-field { 
 		display: none; 
 		align-content: flex-end;
+		border: 0;
+		background-color: transparent;
+		outline: none;
+		text-transform: uppercase;
+		font-family: $font__header;
+		line-height: 1;
+		padding-left: 10px;
 
 	.screen-reader-text {
 		border: none;
@@ -98,6 +105,7 @@
 
 .main-navigation-container {
 	display: flex;
+	justify-content: flex-end;
 }
 
 .main-navigation {
@@ -105,11 +113,15 @@
 	font-weight: 300;
 	font-style: normal;
 	text-transform: uppercase;
-	align-content: flex-end;
-	width: 50%;
+	// align-content: flex-end;
+	width: 75%;
 		 a{
 			 color: $color__link;
 		 }
+}
+
+.menu-main-menu-container {
+	padding-right: 20px;
 }
 
 .site-branding {
