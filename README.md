@@ -6,33 +6,15 @@ Contains: a custom static homepage, About Page, Contact Page, a blog post index 
 
 # TECHNOLOGIES USED:
 
-WordPress, HTML, CSS, SASS, JavaScript, Gulp
+WordPress, HTML, CSS, SASS, JavaScript, Gulp, MAMP.
+
 
 # LEARNINGS
 
-WORDPRESS --
+In this project I learned how to install Wordpress locally and build a website using MAMP. I learned how to use a starter theme as a base for building the website, the use of the Wordpress Dashboard to control the behind-the-scene details of managing the website and effectively organizing the project's custom theme and plugin directories. 
 
-Use of a starter theme as a base for building the website;
+I learned to create a custom page template that dynamically adds a hero image through a custom field, how to create a custom post type and custom taxonomy inside of a functionality plugin, how to properly enqueue CSS and JS files in the themes functions.php file and how to leverage the Wordpress template hierarchy to generate the required layout for the website. 
 
-Configuring a WordPress menu for the main site navigation through the admin interface;
-
-Dynamically adding a hero image through a custom field for a custom page template;
-
-How to include:
-
-    A custom post type inside of a functionality plugin;
-
-    A custom taxonomy inside of a functionality plugin;
-
-    Applicable custom fields for additional metadata using the Custom Field Suite plugin;
-
-    A custom widget plugin to allow editing of sidebar by client;
-
-    A widgetized area in the sidebar
-
-How to properly enqueue CSS and JS files in the theme's functions.php file;
-
-Leveraging the WP template hierarchy to generate required layouts for the website
 
 -------------------------------------------------------------------
 
