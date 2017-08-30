@@ -1,4 +1,3 @@
-Inline-style: 
 ![front-page](https://github.com/mariesarabia/Project-4-Inhabitent/blob/master/themes/inhabitent/images/screencapture-inhabitent.png "Inhabitent Front Page")
 
 
