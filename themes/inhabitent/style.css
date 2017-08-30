@@ -1201,7 +1201,7 @@ object {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: white;
+  color: #fff;
   transform: translate(-50%, -50%);
   text-align: center; }
 
@@ -1342,12 +1342,12 @@ object {
 .post-type-archive ul.leaders span:first-child,
 .tax-product-type ul.leaders span:first-child {
   margin: 0;
-  background: white; }
+  background-color: #fff; }
 
 .post-type-archive ul.leaders span + span,
 .tax-product-type ul.leaders span + span {
   float: right;
-  background: white;
+  background: #fff;
   position: relative;
   z-index: 1; }
 
@@ -1582,7 +1582,8 @@ object {
   font-family: Novecentosanswide, sans-serif;
   text-transform: uppercase;
   font-size: 0.9rem;
-  padding: 0.75rem 1.5rem; }
+  padding: 0.75rem 1.5rem;
+  margin-top: 20px; }
   .single .social-media-buttons button .fa {
     padding-right: 10px; }
 

@@ -202,7 +202,7 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			color: white;
+			color: $color__reverse;
 			transform: translate(-50%, -50%);
 			text-align: center;
 		}
@@ -347,7 +347,7 @@
 		}
 	}
 	
-	//DOT LEADERS 
+	//DOT LEADERS (https://www.w3.org/Style/Examples/007/leaders.en.html)
 	ul.leaders {
 		max-width: 100%;
 		padding: 0;
@@ -367,11 +367,11 @@
 	 ". . . . . . . . . . . . . . . . . . . . "}
 	ul.leaders span:first-child {
 		margin: 0;
-		background: white}
+		background-color: $color__reverse;}
 	ul.leaders span + span {
 		float: right;
 		// padding-left: 0.33em;
-		background: white;
+		background: $color__reverse;
 		position: relative;
 		z-index: 1
 	}
@@ -444,23 +444,8 @@
 		
 	}
 
-
-		// border: 1px solid $color__border;
-		// left: 0.75rem;
-		// bottom: 0.75rem;
-		// font-family: $font__header;
-		// font-size: 0.9rem;
-		// padding: 0.75rem 1.5rem;
-		// text-decoration: none;
-		// 	a {
-		// 		color: $color__border;
-		// 	}
-		// 	.button-hover {
-		// 		background-color: $color__link;
-			
 		
-
-			
+//BLOG POST STYLING		
 
 .blog,
 .single.single-post {
@@ -710,6 +695,7 @@
 			text-transform: uppercase;
 			font-size: 0.9rem;
 			padding: 0.75rem 1.5rem;
+			margin-top: 20px;
 				.fa {
 					padding-right: 10px;
 				}
