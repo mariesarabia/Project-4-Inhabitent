@@ -1057,20 +1057,6 @@ object {
   .home .product-type-grid p {
     margin-bottom: 1.5rem; }
 
-.home .product-type-box {
-  -ms-flex: 0 1 23.5%;
-      flex: 0 1 23.5%;
-  max-width: 23.5%;
-  border: 1px solid #c8c8c8;
-  border-top-width: 5px;
-  padding: 0.75rem; }
-  .home .product-type-box img {
-    width: 70px;
-    height: 70px; }
-  .home .product-type-box a:hover,
-  .home .product-type-box a:visited {
-    color: #fff; }
-
 .home .product-type-button {
   background-color: #248A83;
   color: #fff;
@@ -1164,6 +1150,10 @@ object {
   text-decoration: none; }
   .home .read-button a {
     color: #000; }
+  .home .read-button:hover {
+    background-color: #248A83;
+    color: #fff;
+    border: 0; }
 
 .button:hover {
   background-color: #248A83; }
@@ -1208,8 +1198,18 @@ object {
   text-align: center;
   width: 1120px; }
   .product-type-grid .product-type-box {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%; }
+    -ms-flex: 0 1 23.5%;
+        flex: 0 1 23.5%;
+    max-width: 23.5%;
+    border: 1px solid #c8c8c8;
+    border-top-width: 5px;
+    padding: 0.75rem; }
+    .product-type-grid .product-type-box img {
+      width: 70px;
+      height: 70px; }
+    .product-type-grid .product-type-box:hover {
+      border: 1px solid #d99054;
+      box-sizing: border-box; }
   .product-type-grid .img {
     width: 70px;
     height: 70px; }
@@ -1448,26 +1448,30 @@ object {
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
-    margin-top: 10px; }
+    color: #fff; }
     .adventures .read-button-adv a {
       color: #fff; }
-    .adventures .read-button-adv .button-hover {
-      background-color: #248A83; }
+    .adventures .read-button-adv:hover {
+      background-color: #248A83;
+      color: #fff;
+      border: 0; }
   .adventures .canoe {
     width: 50%;
     height: auto;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
     box-sizing: border-box;
-    padding: 1.5rem;
     border-right: 10px solid #fff;
     position: relative; }
-    .adventures .canoe h3 {
-      font-size: 3rem; }
     .adventures .canoe .adventures-info {
       position: absolute;
       margin: 1.5rem; }
+      .adventures .canoe .adventures-info .read-button-adv {
+        position: relative;
+        margin-top: 3rem; }
+      .adventures .canoe .adventures-info h3 {
+        font-size: 3rem; }
   .adventures .adventure-box-2 {
     display: -ms-flexbox;
     display: flex;
@@ -1480,39 +1484,46 @@ object {
       width: 100%;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat;
       background-size: cover;
+      background-position: 50% 50%;
       margin-bottom: 10px;
       position: relative;
       box-sizing: border-box;
-      padding: 1.5rem;
       border-left: 10px solid #fff; }
-      .adventures .adventure-box-2 .friends h3 {
-        font-size: 2.4rem; }
       .adventures .adventure-box-2 .friends .adventures-info {
         position: absolute;
         margin: 1.5rem; }
+        .adventures .adventure-box-2 .friends .adventures-info h3 {
+          font-size: 2.4rem; }
+        .adventures .adventure-box-2 .friends .adventures-info .read-button-adv {
+          position: relative;
+          margin-top: 3rem; }
     .adventures .adventure-box-2 .mountain {
       width: 50%;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat;
       background-size: cover;
+      background-position: 50% 50%;
       position: relative;
       box-sizing: border-box;
-      padding: 1.5rem;
       border-right: 10px solid #fff;
       border-left: 10px solid #fff;
       border-top: 10px solid #fff; }
-      .adventures .adventure-box-2 .mountain h3 {
-        font-size: 1.6rem;
-        line-height: 2rem; }
       .adventures .adventure-box-2 .mountain .adventures-info {
         position: absolute;
         margin: 1.5rem; }
+        .adventures .adventure-box-2 .mountain .adventures-info h3 {
+          font-size: 1.6rem;
+          line-height: 2rem; }
+        .adventures .adventure-box-2 .mountain .adventures-info .read-button-adv {
+          position: relative;
+          margin-top: 4rem;
+          margin-left: 0; }
     .adventures .adventure-box-2 .night-sky {
       width: 50%;
       background: url("../../images/adventure-photos/night-sky.jpg") no-repeat;
       background-size: cover;
+      background-position: 50% 50%;
       position: relative;
       box-sizing: border-box;
-      padding: 1.5rem;
       border-top: 10px solid #fff;
       border-left: 10px solid #fff; }
       .adventures .adventure-box-2 .night-sky h3 {
@@ -1521,6 +1532,9 @@ object {
       .adventures .adventure-box-2 .night-sky .adventures-info {
         position: absolute;
         margin: 1.5rem; }
+        .adventures .adventure-box-2 .night-sky .adventures-info .read-button-adv {
+          position: relative;
+          margin-top: 4rem; }
 
 .archive.date .page-title {
   font-family: Novecentosanswide, sans-serif;

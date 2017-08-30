@@ -52,7 +52,7 @@ get_header(); ?>
 							<span class="publication-date"><?php the_date(); ?></span> / <?php comments_number ( '0 Comments', '1 Comment', '% Comments' ); ?>
 							<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						</div>
-							<a class="read-button" href="<?php the_permalink(); ?>">Read Entry</a>
+							<p><a class="read-button" href="<?php the_permalink(); ?>">Read Entry</a><p>
 					</li>
 							<?php endforeach; wp_reset_postdata(); ?>
 				</ul>

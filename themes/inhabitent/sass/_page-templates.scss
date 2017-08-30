@@ -41,22 +41,6 @@
 
 }
 
-.home .product-type-box {
-	flex:0 1 23.5%;
-	max-width: 23.5%;
-	border: 1px solid $color__rule;
-	border-top-width: 5px;
-	padding: 0.75rem;
-	img {
-		width: 70px;
-		height: 70px;
-	}
-	a:hover,
-	a:visited {
-		color: $color__reverse;
-	}
-}
-
 .home .product-type-button {
 	background-color: $color__link;
 	color: $color__reverse;
@@ -163,6 +147,12 @@
 		a {
 			color: $color__border;
 		}
+		&:hover {
+			background-color: $color__link;
+			color: $color__reverse;
+			border: 0;
+		}
+
 }
 
 .button:hover {
@@ -224,9 +214,21 @@
     justify-content: space-between;
     text-align: center;
     width: 1120px;
-        .product-type-box {
-            flex-basis: 25%;
-        }
+	.product-type-box {
+		flex:0 1 23.5%;
+		max-width: 23.5%;
+		border: 1px solid $color__rule;
+		border-top-width: 5px;
+		padding: 0.75rem;
+		img {
+			width: 70px;
+			height: 70px;
+		}
+		&:hover {
+			border: 1px solid $color__accent;
+			box-sizing: border-box;
+		}
+	}
         .img {
             width: 70px;
             height: 70px;
@@ -531,12 +533,13 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		color: $color__reverse;
-		margin-top: 10px;
 			a {
 				color: $color__reverse;
 			}
-			.button-hover {
+			&:hover {
 				background-color: $color__link;
+				color: $color__reverse;
+				border: 0;
 			}
 		}
 
@@ -546,18 +549,24 @@
 		background: linear-gradient(180deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
 		url('../../images/adventure-photos/canoe-girl.jpg') no-repeat;
 		background-size: cover;
+		background-position: 50% 50%;
 		box-sizing: border-box;
-		padding: 1.5rem;
 		border-right: 10px solid $color__reverse;
 		position: relative;
 
-		h3 {
-			font-size: 3rem;
-		}
 
 		.adventures-info {
 			position: absolute;
 			margin: 1.5rem;
+
+			.read-button-adv {
+				position: relative;
+				margin-top: 3rem;
+			}
+
+			h3 {
+				font-size: 3rem;
+			}
 		}
 	}
 	
@@ -572,19 +581,24 @@
 			background: linear-gradient(180deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
 			url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat;
 			background-size: cover;
+			background-position: 50% 50%;
 			margin-bottom: 10px;
 			position: relative;
 			box-sizing: border-box;
-			padding: 1.5rem;
 			border-left: 10px solid $color__reverse;
-
-			h3 {
-				font-size: 2.4rem;
-			}
 
 			.adventures-info {
 				position: absolute;
 				margin: 1.5rem;
+
+				h3 {
+					font-size: 2.4rem;
+				}
+
+				.read-button-adv {
+					position: relative;
+					margin-top: 3rem;
+				}
 			}
 		}
 
@@ -593,22 +607,27 @@
 			background: linear-gradient(180deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
 			url('../../images/adventure-photos/mountain-hikers.jpg') no-repeat;
 			background-size: cover;
+			background-position: 50% 50%;
 			position: relative;
 			box-sizing: border-box;
-			padding: 1.5rem;
 			border-right: 10px solid $color__reverse;
 			border-left: 10px solid $color__reverse;
 			border-top: 10px solid $color__reverse;
-			
-
-			h3 {
-				font-size: 1.6rem;
-				line-height: 2rem;
-			}
 
 			.adventures-info {
 				position: absolute;
 				margin: 1.5rem;
+
+				h3 {
+					font-size: 1.6rem;
+					line-height: 2rem;
+				}
+
+				.read-button-adv {
+					position: relative;
+					margin-top: 4rem;
+					margin-left: 0;
+				}
 			}
 		}
 
@@ -616,9 +635,9 @@
 			width: 50%;
 			background: url('../../images/adventure-photos/night-sky.jpg') no-repeat;
 			background-size: cover;
+			background-position: 50% 50%;
 			position: relative;
 			box-sizing: border-box;
-			padding: 1.5rem;
 			border-top: 10px solid $color__reverse;
 			border-left: 10px solid $color__reverse;
 
@@ -630,6 +649,10 @@
 			.adventures-info {
 				position: absolute;
 				margin: 1.5rem;
+				.read-button-adv {
+					position: relative;
+					margin-top: 4rem;
+				}
 			}
 
 		}
