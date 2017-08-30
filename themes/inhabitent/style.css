@@ -524,6 +524,71 @@ a {
   text-align: right;
   width: 50%; }
 
+.site-header {
+  position: fixed;
+  z-index: 99999;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-bottom: 1px solid #c8c8c8;
+  background-color: rgba(255, 255, 255, 0.85); }
+  .site-header .container {
+    width: 1120px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .site-header .search-container {
+    display: -ms-flexbox;
+    display: flex; }
+  .site-header .search-field {
+    display: none;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    text-transform: uppercase;
+    font-family: Novecentosanswide, sans-serif;
+    line-height: 1;
+    padding-left: 10px; }
+    .site-header .search-field .screen-reader-text, .site-header .search-field .search-submit {
+      border: none;
+      border-radius: 0; }
+
+.home .site-header.scrolled {
+  background-color: transparent;
+  transition: background-color 200ms linear; }
+
+.main-navigation-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.main-navigation {
+  font-family: Novecentosanswide, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  width: 75%; }
+  .main-navigation a {
+    color: #248A83; }
+
+.menu-main-menu-container {
+  padding-right: 20px; }
+
+.site-branding .tent-logo {
+  width: 50px;
+  height: 33px; }
+
+.field-set {
+  border: 0;
+  margin: 0; }
+
+.search-toggle {
+  color: #248A83; }
+
 .site-header .container {
   display: -ms-flexbox;
   display: flex;
@@ -727,71 +792,6 @@ a {
 .bypostauthor {
   display: block; }
 
-.site-header {
-  position: fixed;
-  z-index: 99999;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  border-bottom: 1px solid #c8c8c8;
-  background-color: rgba(255, 255, 255, 0.85); }
-  .site-header .container {
-    width: 1120px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .site-header .search-container {
-    display: -ms-flexbox;
-    display: flex; }
-  .site-header .search-field {
-    display: none;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
-    border: 0;
-    background-color: transparent;
-    outline: none;
-    text-transform: uppercase;
-    font-family: Novecentosanswide, sans-serif;
-    line-height: 1;
-    padding-left: 10px; }
-    .site-header .search-field .screen-reader-text, .site-header .search-field .search-submit {
-      border: none;
-      border-radius: 0; }
-
-.home .site-header.scrolled {
-  background-color: transparent;
-  transition: background-color 200ms linear; }
-
-.main-navigation-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end; }
-
-.main-navigation {
-  font-family: Novecentosanswide, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  text-transform: uppercase;
-  width: 75%; }
-  .main-navigation a {
-    color: #248A83; }
-
-.menu-main-menu-container {
-  padding-right: 20px; }
-
-.site-branding .tent-logo {
-  width: 50px;
-  height: 33px; }
-
-.field-set {
-  border: 0;
-  margin: 0; }
-
-.search-toggle {
-  color: #248A83; }
-
 .post-type-archive-product .content-area,
 .tax-product-type .content-area,
 .product-template-default .content-area {
@@ -829,12 +829,6 @@ a {
     text-decoration: none;
     color: #248A83; }
 
-.archive .page-title {
-  font-family: Novecentosanswide, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2.5rem; }
-
 .single-product .hentry {
   display: -ms-flexbox;
   display: flex;
@@ -863,7 +857,8 @@ a {
 .single.single-post .content-area,
 .page-template-default:not(.home) .content-area,
 .error404 .content-area,
-.search-results .content-area {
+.search-results .content-area,
+.archive.date .content-area {
   width: 73%;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -874,7 +869,8 @@ a {
 .single.single-post .site-content,
 .page-template-default:not(.home) .site-content,
 .error404 .site-content,
-.search-results .site-content {
+.search-results .site-content,
+.archive.date .site-content {
   padding-top: 50px;
   display: -ms-flexbox;
   display: flex;
@@ -885,7 +881,8 @@ a {
   .single.single-post .site-content .widget-area,
   .page-template-default:not(.home) .site-content .widget-area,
   .error404 .site-content .widget-area,
-  .search-results .site-content .widget-area {
+  .search-results .site-content .widget-area,
+  .archive.date .site-content .widget-area {
     width: 27%;
     padding-left: 5%;
     padding-top: 1.5rem; }
@@ -893,7 +890,8 @@ a {
     .single.single-post .site-content .widget-area h2.widget-title,
     .page-template-default:not(.home) .site-content .widget-area h2.widget-title,
     .error404 .site-content .widget-area h2.widget-title,
-    .search-results .site-content .widget-area h2.widget-title {
+    .search-results .site-content .widget-area h2.widget-title,
+    .archive.date .site-content .widget-area h2.widget-title {
       font-family: Novecentosanswide, sans-serif;
       text-transform: uppercase;
       font-size: 1.5rem;
@@ -902,7 +900,8 @@ a {
     .single.single-post .site-content .widget-area a,
     .page-template-default:not(.home) .site-content .widget-area a,
     .error404 .site-content .widget-area a,
-    .search-results .site-content .widget-area a {
+    .search-results .site-content .widget-area a,
+    .archive.date .site-content .widget-area a {
       text-decoration: none; }
 
 .page-template-default:not(.home) h2 {
@@ -1176,7 +1175,8 @@ object {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin-top: 0; }
 
 .page-template-about .entry-content {
   max-width: 800px;
@@ -1190,7 +1190,13 @@ object {
 
 .page-template-about .entry-header .container {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center; }
 
 .product-type-grid {
   display: -ms-flexbox;
@@ -1211,7 +1217,9 @@ object {
   margin-bottom: 1.5rem;
   font-family: Novecentosanswide, sans-serif;
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase; }
 
 .tax-product-type .taxonomy-description {
   text-align: center;
@@ -1343,16 +1351,17 @@ object {
 
 .read_more {
   border: 1px solid #000;
-  left: 0.75rem;
-  bottom: 0.75rem;
   font-family: Novecentosanswide, sans-serif;
-  font-size: 0.9rem;
   padding: 0.75rem 1.5rem;
-  text-decoration: none; }
+  font-size: 1.1rem;
+  background-color: transparent;
+  width: 21%; }
+  .read_more:hover {
+    background-color: #248A83;
+    color: #fff; }
   .read_more a {
-    color: #000; }
-  .read_more .button-hover {
-    background-color: #248A83; }
+    text-decoration: none;
+    color: #404040; }
 
 .blog .entry-header,
 .single.single-post .entry-header {
@@ -1437,7 +1446,8 @@ object {
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff; }
+    color: #fff;
+    margin-top: 10px; }
     .adventures .read-button-adv a {
       color: #fff; }
     .adventures .read-button-adv .button-hover {
@@ -1449,9 +1459,12 @@ object {
     background-size: cover;
     box-sizing: border-box;
     padding: 1.5rem;
-    border-right: 10px solid #fff; }
+    border-right: 10px solid #fff;
+    position: relative; }
     .adventures .canoe h3 {
-      font-size: 3rem;
+      font-size: 3rem; }
+    .adventures .canoe .adventures-info {
+      position: absolute;
       margin: 1.5rem; }
   .adventures .adventure-box-2 {
     display: -ms-flexbox;
@@ -1472,6 +1485,9 @@ object {
       border-left: 10px solid #fff; }
       .adventures .adventure-box-2 .friends h3 {
         font-size: 2.4rem; }
+      .adventures .adventure-box-2 .friends .adventures-info {
+        position: absolute;
+        margin: 1.5rem; }
     .adventures .adventure-box-2 .mountain {
       width: 50%;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat;
@@ -1485,6 +1501,9 @@ object {
       .adventures .adventure-box-2 .mountain h3 {
         font-size: 1.6rem;
         line-height: 2rem; }
+      .adventures .adventure-box-2 .mountain .adventures-info {
+        position: absolute;
+        margin: 1.5rem; }
     .adventures .adventure-box-2 .night-sky {
       width: 50%;
       background: url("../../images/adventure-photos/night-sky.jpg") no-repeat;
@@ -1497,6 +1516,61 @@ object {
       .adventures .adventure-box-2 .night-sky h3 {
         font-size: 1.6rem;
         line-height: 2rem; }
+      .adventures .adventure-box-2 .night-sky .adventures-info {
+        position: absolute;
+        margin: 1.5rem; }
+
+.archive.date .page-title {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  margin-left: 0; }
+
+.archive.date .page-header {
+  border-bottom: 1px solid #c8c8c8; }
+
+.single.single-post .entry-footer {
+  text-transform: uppercase;
+  font-family: Novecentosanswide, sans-serif; }
+  .single.single-post .entry-footer .cat-links {
+    padding-right: 25px; }
+
+.single .social-media-buttons button {
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  margin: 1.5rem 0; }
+  .single .social-media-buttons button .fa {
+    padding-right: 10px; }
+
+.single .comments-area h2 {
+  font-family: Novecentosanswide, sans-serif;
+  font-size: 2.1rem; }
+
+.single .comments-area .comment-list {
+  padding-left: 0; }
+  .single .comments-area .comment-list li {
+    padding-left: 0; }
+
+.single .comments-area .comment-author-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 64px;
+  width: 64px; }
+
+.single .comments-area .comment-body {
+  display: -ms-flexbox;
+  display: flex; }
+  .single .comments-area .comment-body .comment-author-avatar {
+    margin-right: 1.5rem; }
 
 .error404 .page-title {
   text-transform: uppercase;

@@ -63,25 +63,32 @@ get_header(); ?>
 				<h2>Latest Adventures</h2>
 				<div class="adventures">	
 					<div class="canoe">
-					<h3>Getting Back to Nature in a Canoe<a href="<?php the_permalink(); ?>"></a></h3>
-						<a class="read-button-adv" href="<?php the_permalink(); ?>">Read More</a>
+						<div class="adventures-info">
+							<h3>Getting Back to Nature in a Canoe<a href="<?php the_permalink(); ?>"></a></h3>
+							<a class="read-button-adv" href="<?php the_permalink(); ?>">Read More</a>
+						</div>
 					</div>
 
-					<div class="adventure-box-2">
-						<div class="friends">
+				<div class="adventure-box-2">
+					<div class="friends">
+						<div class="adventures-info">
 							<h3>A Night with Friends at the Beach<a href="<?php the_permalink(); ?>"></a></h3>
 							<a class="read-button-adv" href="<?php the_permalink(); ?>">Read More</a>
 						</div>
+					</div>
 
-						<div class="mountain">
+					<div class="mountain">
+						<div class="adventures-info">
 							<h3>Taking in the View at Big Mountain<a href="<?php the_permalink(); ?>"></a></h3>
 							<a class="read-button-adv" href="<?php the_permalink(); ?>">Read More</a>
 						</div>
+					</div>
 
-						<div class="night-sky">
+					<div class="night-sky">
+						<div class="adventures-info">
 							<h3>Star-Gazing at the Night Sky<a href="<?php the_permalink(); ?>"></a></h3>
 							<a class="read-button-adv" href="<?php the_permalink(); ?>">Read More</a>
-						</div>
+						<div>
 					</div>
 				</div>
 			</section>

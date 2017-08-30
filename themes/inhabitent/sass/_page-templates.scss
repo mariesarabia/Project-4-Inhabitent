@@ -175,78 +175,6 @@
 	font-family: $font__header;
 }
 
-//LATEST ADVENTURES 
-
-
-// .adventure-posts {
-// 	display: flex;
-// 	flex-direction: row;
-// 	flex-wrap: wrap;
-// 	justify-content: space-between;
-// 	width: 100%;
-// 	list-style: none;
-// 	padding-left: 0;
-// 	width: 1120px;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// 	 h3 {
-// 		font-size: 3rem;
-// 		color: #fff;
-// 		font-weight: 300;
-// 		font-style: normal;
-// 		line-height: 1;
-// 	 }
-// 	 .canoe {
-// 		 max-width: 50%;
-// 		 height: 100vh;
-// 		 position: relative;
-// 		 bottom: 0;
-// 		 left: 0;
-// 	 }
-// 	 .mountains {
-// 		max-width: 50%;
-// 		height: 50%;
-// 	 }
-// 	 .friends {
-// 		max-width: 50%;
-// 		height: 50%;
-// 	}
-// 	.night-sky {
-// 		max-width: 25%;
-// 		height: 50%;
-// 	}
-// }
-
-// .adventure-posts {
-// 	display: flex;
-// 	flex-flow: row wrap;
-// 	width: 100%;
-// 	height: 540px;
-// 	padding: 0.75rem;
-// 	background-color: blue;
-// 	list-style: none;
-// 	margin: 0;
-	
-// }
-
-
-// .friends {
-// 	background: url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat;
-// 	background-size: cover;
-// 	max-width: calc(100% / 2);
-// 	height: 50%;
-// }
-// .mountain {
-// 	background-image: url('../../images/adventure-photos/mountain-hikers.jpg');
-// 	max-width: calc(100% / 3);
-// 	height: 50%;
-// }
-// .night-sky {
-// 	background-image: url('../../images/adventure-photos/night-sky.jpg');
-// 	max-width: calc(100% / 3);
-// 	height: 50%;
-// }
-
 //ABOUT PAGE 
 
 .page-template-about {
@@ -255,16 +183,12 @@
 		margin-right: auto;
 		width: 1120px;
 		font-size: 1rem;
+		margin-top: 0;
 	}
 	
 	// .entry-title {
 	// 	font-family: $font__header;
 	// 	text-transform: uppercase;
-	// 	text-align: center;
-	// 	color: $color__reverse;
-	// 	font-size: 3rem;
-	// 	margin-top: auto;
-	// 	margin-bottom: auto;
 	// }
 
 	.entry-content {
@@ -283,6 +207,12 @@
 		.container {
 			margin-left: auto;
 			margin-right: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			color: white;
+			transform: translate(-50%, -50%);
+			text-align: center;
 		}
 	}
 }
@@ -313,6 +243,8 @@
 		font-family: $font__header;
 		font-weight: bold;
 		font-style: normal;
+		text-align: center;
+		text-transform: uppercase;
 	}
 	.taxonomy-description {
 		text-align: center;
@@ -469,20 +401,37 @@
 
 	.read_more {
 		border: 1px solid $color__border;
-		// position: absolute;
-		left: 0.75rem;
-		bottom: 0.75rem;
 		font-family: $font__header;
-		font-size: 0.9rem;
 		padding: 0.75rem 1.5rem;
-		text-decoration: none;
-			a {
-				color: $color__border;
-			}
-			.button-hover {
+		font-size: 1.1rem;
+		background-color: transparent;
+		width: 21%;
+			&:hover {
 				background-color: $color__link;
+				color: $color__reverse;
 			}
-		}
+			a {
+				text-decoration: none;
+				color: $color__text-main;
+			}
+		
+	}
+
+
+		// border: 1px solid $color__border;
+		// left: 0.75rem;
+		// bottom: 0.75rem;
+		// font-family: $font__header;
+		// font-size: 0.9rem;
+		// padding: 0.75rem 1.5rem;
+		// text-decoration: none;
+		// 	a {
+		// 		color: $color__border;
+		// 	}
+		// 	.button-hover {
+		// 		background-color: $color__link;
+			
+		
 
 			
 
@@ -582,6 +531,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		color: $color__reverse;
+		margin-top: 10px;
 			a {
 				color: $color__reverse;
 			}
@@ -599,9 +549,14 @@
 		box-sizing: border-box;
 		padding: 1.5rem;
 		border-right: 10px solid $color__reverse;
+		position: relative;
 
 		h3 {
 			font-size: 3rem;
+		}
+
+		.adventures-info {
+			position: absolute;
 			margin: 1.5rem;
 		}
 	}
@@ -626,6 +581,11 @@
 			h3 {
 				font-size: 2.4rem;
 			}
+
+			.adventures-info {
+				position: absolute;
+				margin: 1.5rem;
+			}
 		}
 
 		.mountain {
@@ -645,6 +605,11 @@
 				font-size: 1.6rem;
 				line-height: 2rem;
 			}
+
+			.adventures-info {
+				position: absolute;
+				margin: 1.5rem;
+			}
 		}
 
 		.night-sky {
@@ -662,6 +627,87 @@
 				line-height: 2rem;
 			}
 
+			.adventures-info {
+				position: absolute;
+				margin: 1.5rem;
+			}
+
+		}
+	}
+}
+
+.archive.date {
+	.page-title {
+		font-family: $font__header;
+		text-transform: uppercase;
+		text-align: left;
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.page-header {
+		border-bottom: 1px solid $color__rule;
+	}
+}
+
+.single.single-post {
+	.entry-footer {
+		text-transform: uppercase;
+		font-family: $font__header;
+		
+			.cat-links {
+				padding-right: 25px;
+			}
+	}	
+
+
+}
+
+.single {
+	.social-media-buttons {
+		button {
+			border: 1px solid $color__border;
+			background-color: $color__reverse;
+			border-radius: 0;
+			box-shadow: none;
+			font-family: $font__header;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			padding: 0.75rem 1.5rem;
+			margin: 1.5rem 0;
+				.fa {
+					padding-right: 10px;
+				}
+		}
+	}
+	
+	.comments-area {
+		h2 {
+			font-family: $font__header;
+			font-size: 2.1rem;
+		}
+
+		.comment-list {
+			padding-left: 0;
+			li {
+				padding-left: 0;
+			}
+		}
+
+		.comment-author-avatar {
+			border-radius: 50%;
+			overflow: hidden;
+			height: 64px;
+			width: 64px;
+		}
+		.comment-body {
+			display: flex;
+
+			.comment-author-avatar {
+				margin-right: 1.5rem;
+			}
 		}
 	}
 }
