@@ -1,3 +1,7 @@
+Inline-style: 
+![front-page](https://github.com/mariesarabia/Project-4-Inhabitent/blob/master/themes/inhabitent/images/screencapture-inhabitent.png "Inhabitent Front Page")
+
+
 # INHABITENT
 
 In this project, I created a multi-page website with a blog for a fictitious camping supply company in Vancouver called Inhabitent Camping Supply Co., using Wordpress as content management system. 
