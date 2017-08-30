@@ -950,9 +950,11 @@ a {
   font-family: Novecentosanswide, sans-serif;
   font-size: 2.4rem;
   letter-spacing: 2px; }
-  .search-results .page-title .entry-title a {
-    font-family: Merriweather, serif;
-    font-size: 2rem;
+
+.search-results .entry-title {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase; }
+  .search-results .entry-title a {
     text-decoration: none;
     color: #248A83; }
 
