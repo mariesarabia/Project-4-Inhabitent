@@ -858,7 +858,8 @@ a {
 .page-template-default:not(.home) .content-area,
 .error404 .content-area,
 .search-results .content-area,
-.archive.date .content-area {
+.archive.date .content-area,
+.archive.category .content-area {
   width: 73%;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -870,7 +871,8 @@ a {
 .page-template-default:not(.home) .site-content,
 .error404 .site-content,
 .search-results .site-content,
-.archive.date .site-content {
+.archive.date .site-content,
+.archive.category .site-content {
   padding-top: 50px;
   display: -ms-flexbox;
   display: flex;
@@ -882,7 +884,8 @@ a {
   .page-template-default:not(.home) .site-content .widget-area,
   .error404 .site-content .widget-area,
   .search-results .site-content .widget-area,
-  .archive.date .site-content .widget-area {
+  .archive.date .site-content .widget-area,
+  .archive.category .site-content .widget-area {
     width: 27%;
     padding-left: 5%;
     padding-top: 1.5rem; }
@@ -891,7 +894,8 @@ a {
     .page-template-default:not(.home) .site-content .widget-area h2.widget-title,
     .error404 .site-content .widget-area h2.widget-title,
     .search-results .site-content .widget-area h2.widget-title,
-    .archive.date .site-content .widget-area h2.widget-title {
+    .archive.date .site-content .widget-area h2.widget-title,
+    .archive.category .site-content .widget-area h2.widget-title {
       font-family: Novecentosanswide, sans-serif;
       text-transform: uppercase;
       font-size: 1.5rem;
@@ -901,7 +905,8 @@ a {
     .page-template-default:not(.home) .site-content .widget-area a,
     .error404 .site-content .widget-area a,
     .search-results .site-content .widget-area a,
-    .archive.date .site-content .widget-area a {
+    .archive.date .site-content .widget-area a,
+    .archive.category .site-content .widget-area a {
       text-decoration: none; }
 
 .page-template-default:not(.home) h2 {
@@ -953,10 +958,14 @@ a {
 
 .search-results .entry-title {
   font-family: Novecentosanswide, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2.1rem; }
   .search-results .entry-title a {
     text-decoration: none;
     color: #248A83; }
+
+.search-results .page-header {
+  border-bottom: 1px solid #c8c8c8; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1170,6 +1179,12 @@ object {
   font-size: 1rem;
   margin-top: 0; }
 
+.page-template-about .entry-title {
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px; }
+
 .page-template-about .entry-content {
   max-width: 800px;
   margin: 3rem auto;
@@ -1336,6 +1351,19 @@ object {
   position: relative;
   z-index: 1; }
 
+.single.single-product .entry-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+.single.single-product .entry-content {
+  margin-top: 0; }
+
+.price {
+  font-size: 1.8rem;
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0; }
+
 .blog .entry-header {
   position: relative; }
   .blog .entry-header h2 {
@@ -1358,23 +1386,26 @@ object {
   font-size: 1.1rem;
   background-color: transparent;
   width: 21%; }
-  .read_more:hover {
-    background-color: #248A83;
-    color: #fff; }
   .read_more a {
     text-decoration: none;
     color: #404040; }
+    .read_more a:hover {
+      color: #fff; }
+  .read_more:hover {
+    background-color: #248A83;
+    border: 2rem; }
 
 .blog .entry-header,
 .single.single-post .entry-header {
   position: relative; }
 
-.blog h1,
-.single.single-post h1 {
+.blog h1.entry-title,
+.single.single-post h1.entry-title {
   position: absolute;
   top: 0;
   left: 0;
   font-family: Novecentosanswide, sans-serif;
+  font-size: 2.1rem;
   background-color: #248A83;
   color: #fff;
   margin-top: 2.25rem;
@@ -1417,8 +1448,9 @@ object {
   text-decoration: none; }
   .blog .read-button a {
     color: #000; }
-  .blog .read-button .button:hover {
-    background-color: #248A83; }
+  .blog .read-button:hover {
+    border: 1px solid #d99054;
+    box-sizing: border-box; }
 
 .adventures-container {
   padding-bottom: 4.5rem; }
@@ -1536,18 +1568,6 @@ object {
           position: relative;
           margin-top: 4rem; }
 
-.archive.date .page-title {
-  font-family: Novecentosanswide, sans-serif;
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0;
-  margin-left: 0; }
-
-.archive.date .page-header {
-  border-bottom: 1px solid #c8c8c8; }
-
 .single.single-post .entry-footer {
   text-transform: uppercase;
   font-family: Novecentosanswide, sans-serif; }
@@ -1562,8 +1582,7 @@ object {
   font-family: Novecentosanswide, sans-serif;
   text-transform: uppercase;
   font-size: 0.9rem;
-  padding: 0.75rem 1.5rem;
-  margin: 1.5rem 0; }
+  padding: 0.75rem 1.5rem; }
   .single .social-media-buttons button .fa {
     padding-right: 10px; }
 
@@ -1587,6 +1606,52 @@ object {
   display: flex; }
   .single .comments-area .comment-body .comment-author-avatar {
     margin-right: 1.5rem; }
+
+.archive.date .page-title {
+  font-size: 2.4rem;
+  font-family: Novecentosanswide, sans-serif;
+  text-transform: uppercase;
+  margin-top: 0; }
+
+.archive.date .page-header {
+  border-bottom: 1px solid #c8c8c8;
+  margin-bottom: 3rem; }
+
+.archive.date .entry-header {
+  position: relative; }
+  .archive.date .entry-header h2.entry-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Novecentosanswide, sans-serif;
+    font-size: 2.1rem;
+    background-color: #248A83;
+    color: #fff;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    text-transform: uppercase;
+    padding: 0.75rem 2.5rem 0.75rem 1.5rem;
+    line-height: 2.5rem; }
+    .archive.date .entry-header h2.entry-title a {
+      color: #fff;
+      text-decoration: none; }
+  .archive.date .entry-header .entry-meta {
+    background-color: #248A83;
+    color: #fff;
+    width: 50%;
+    position: absolute;
+    margin-right: 0;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: Novecentosanswide, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase; }
+  .archive.date .entry-header a {
+    color: #248A83; }
+  .archive.date .entry-header .comments-link a {
+    color: #fff; }
 
 .error404 .page-title {
   text-transform: uppercase;

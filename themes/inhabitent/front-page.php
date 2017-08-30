@@ -65,7 +65,7 @@ get_header(); ?>
 					<div class="canoe">
 						<div class="adventures-info">
 							<h3>Getting Back to Nature in a Canoe<a href="<?php the_permalink(); ?>"></a></h3>
-							<a class="read-button-adv" href="<?php the_permalink(); ?>">Read More</a>
+							<p><a class="read-button-adv" href="<?php the_permalink(); ?>">Read More</a></p>
 						</div>
 					</div>
 

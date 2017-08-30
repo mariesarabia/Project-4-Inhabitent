@@ -176,10 +176,12 @@
 		margin-top: 0;
 	}
 	
-	// .entry-title {
-	// 	font-family: $font__header;
-	// 	text-transform: uppercase;
-	// }
+	.entry-title {
+		font-family: $font__header;
+		text-transform: uppercase;
+		font-size: 3rem;
+		letter-spacing: 2px;
+	}
 
 	.entry-content {
 		max-width: 800px;
@@ -375,7 +377,25 @@
 	}
 }
 
+//SINGLE PRODUCT 
 
+.single.single-product {
+	.entry-title {
+		margin-top: 0;
+		margin-bottom: 0.5rem;
+	}
+
+	.entry-content {
+		margin-top: 0;
+	}
+}
+
+.price {
+	font-size: 1.8rem;
+	font-family: $font__header;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
 
 // JOURNAL
 
@@ -408,13 +428,18 @@
 		font-size: 1.1rem;
 		background-color: transparent;
 		width: 21%;
-			&:hover {
-				background-color: $color__link;
-				color: $color__reverse;
-			}
+		
 			a {
 				text-decoration: none;
 				color: $color__text-main;
+				&:hover {
+					color: $color__reverse;
+				}
+			}
+
+			&:hover {
+				background-color: $color__link;
+				border: 2rem;
 			}
 		
 	}
@@ -443,14 +468,13 @@
 	.entry-header {
 		position: relative;
 	}
-	.wp-post-image {
 	
-	}
-	h1 {
+	h1.entry-title {
 		position: absolute;
 		top: 0;
 		left: 0;
 		font-family: $font__header;
+		font-size: 2.1rem;
 		background-color: $color__link;
 		color: $color__reverse;
 		margin-top: 2.25rem;
@@ -495,8 +519,9 @@
 		a {
 			color: $color__border;
 		}
-		.button:hover {
-			background-color: $color__link;
+		&:hover {
+			border: 1px solid $color__accent;
+			box-sizing: border-box;
 		}
 }
 
@@ -659,21 +684,7 @@
 	}
 }
 
-.archive.date {
-	.page-title {
-		font-family: $font__header;
-		text-transform: uppercase;
-		text-align: left;
-		font-size: 2.5rem;
-		margin-bottom: 0.5rem;
-		margin-top: 0;
-		margin-left: 0;
-	}
 
-	.page-header {
-		border-bottom: 1px solid $color__rule;
-	}
-}
 
 .single.single-post {
 	.entry-footer {
@@ -699,7 +710,6 @@
 			text-transform: uppercase;
 			font-size: 0.9rem;
 			padding: 0.75rem 1.5rem;
-			margin: 1.5rem 0;
 				.fa {
 					padding-right: 10px;
 				}
@@ -734,3 +744,65 @@
 		}
 	}
 }
+
+//ARCHIVES PAGE 
+
+.archive.date {
+	.page-title {
+		font-size: 2.4rem;
+		font-family: $font__header;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+
+	.page-header {
+		border-bottom: 1px solid $color__rule;
+		margin-bottom: 3rem;
+	}
+
+	.entry-header {
+		position: relative; 
+			
+		h2.entry-title {
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: $font__header;
+			font-size: 2.1rem;
+			background-color: $color__link;
+			color: $color__reverse;
+			margin-top: 2.25rem;
+			max-width: 75%;
+			text-transform: uppercase;
+			padding: 0.75rem 2.5rem 0.75rem 1.5rem;
+			line-height: 2.5rem;
+				a {
+					color: $color__reverse;
+					text-decoration: none;
+				}
+		}
+
+		.entry-meta {
+			background-color: $color__link;
+			color: $color__reverse;
+			width: 50%;
+			position: absolute;
+			margin-right: 0;
+			bottom: 0;
+			right: 0;
+			margin-bottom: 0.5rem;
+			text-align: center;
+			font-family: $font__header;
+			font-size: 1rem;
+			text-transform: uppercase;
+		}
+			a {
+				color: $color__link;
+			}
+			.comments-link a {
+				color: $color__reverse;
+			}
+	
+	}
+		}	
+	
