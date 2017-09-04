@@ -158,6 +158,11 @@
 			padding-left: 5%;
 			padding-top: 1.5rem;
 
+			.day-of-week {
+				font-weight: bold;
+				font-style: normal;
+			}
+
 			h2.widget-title {
 				font-family: $font__header;
 				text-transform: uppercase;

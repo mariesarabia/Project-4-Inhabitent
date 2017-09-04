@@ -312,7 +312,7 @@
 
 	.entry-header {
 		height: 250px;
-		background-color: $color__rule;
+		background-color: $color__screen;
 		position: relative;
 		overflow: hidden;
 		img.wp-post-image {
@@ -357,15 +357,18 @@
 		padding: 0.75rem 1.5rem 0 1.5rem;
 		margin-left: 0;
 	}
-	ul.leaders li:after {
+	ul.leaders li:before {
 		float: left;
-		width: 0;
+		min-width: 10px;
 		white-space: nowrap;
+		display: inline;
 		content:
 	 ". . . . . . . . . . . . . . . . . . . . "
 	 ". . . . . . . . . . . . . . . . . . . . "
 	 ". . . . . . . . . . . . . . . . . . . . "
-	 ". . . . . . . . . . . . . . . . . . . . "}
+	 ". . . . . . . . . . . . . . . . . . . . ";
+	}
+
 	ul.leaders span:first-child {
 		margin: 0;
 		background-color: $color__reverse;}
@@ -377,6 +380,30 @@
 		z-index: 1
 	}
 }
+
+
+.dot-leaders {
+	display: flex;
+  }
+  .dot-leaders .entry-title,
+  .dot-leaders .price {
+	flex: 1 0 auto;
+  }
+  .dot-leaders .dots {
+	flex: 0 1 auto;
+  }
+  .dots::before {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: clip;
+	content: 
+	  ". . . . . . . . . . . . . . . . . . . . "
+	  ". . . . . . . . . . . . . . . . . . . . "
+	  ". . . . . . . . . . . . . . . . . . . . "
+	  ". . . . . . . . . . . . . . . . . . . . "
+  }
+
 
 //SINGLE PRODUCT 
 

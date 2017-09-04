@@ -530,7 +530,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.85); }
   .site-header .container {
     width: 1120px;
@@ -809,7 +809,7 @@ a {
   width: 1120px; }
 
 .post-type-archive-product .page-header {
-  border-bottom: 1px dashed #c8c8c8;
+  border-bottom: 1px dashed #e1e1e1;
   margin-bottom: 3rem; }
 
 .product-type-list {
@@ -863,7 +863,7 @@ a {
   width: 73%;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  border-right: 1px solid #c8c8c8;
+  border-right: 1px solid #e1e1e1;
   padding-right: 5%; }
 
 .blog .site-content,
@@ -889,6 +889,15 @@ a {
     width: 27%;
     padding-left: 5%;
     padding-top: 1.5rem; }
+    .blog .site-content .widget-area .day-of-week,
+    .single.single-post .site-content .widget-area .day-of-week,
+    .page-template-default:not(.home) .site-content .widget-area .day-of-week,
+    .error404 .site-content .widget-area .day-of-week,
+    .search-results .site-content .widget-area .day-of-week,
+    .archive.date .site-content .widget-area .day-of-week,
+    .archive.category .site-content .widget-area .day-of-week {
+      font-weight: bold;
+      font-style: normal; }
     .blog .site-content .widget-area h2.widget-title,
     .single.single-post .site-content .widget-area h2.widget-title,
     .page-template-default:not(.home) .site-content .widget-area h2.widget-title,
@@ -965,7 +974,7 @@ a {
     color: #248A83; }
 
 .search-results .page-header {
-  border-bottom: 1px solid #c8c8c8; }
+  border-bottom: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1217,7 +1226,7 @@ object {
     -ms-flex: 0 1 23.5%;
         flex: 0 1 23.5%;
     max-width: 23.5%;
-    border: 1px solid #c8c8c8;
+    border: 1px solid #e1e1e1;
     border-top-width: 5px;
     padding: 0.75rem; }
     .product-type-grid .product-type-box img {
@@ -1241,7 +1250,7 @@ object {
 
 .tax-product-type .taxonomy-description {
   text-align: center;
-  border-bottom: 1px dashed #c8c8c8;
+  border-bottom: 1px dashed #e1e1e1;
   margin-bottom: 1.5rem; }
 
 .product-grid {
@@ -1260,7 +1269,7 @@ object {
   -ms-flex: 0 1 23%;
       flex: 0 1 23%;
   margin-bottom: 1.5rem;
-  border: 1px solid #c8c8c8; }
+  border: 1px solid #e1e1e1; }
   .product-box h2 {
     font-size: 1rem;
     font-family: Merriweather, serif;
@@ -1290,7 +1299,7 @@ object {
       flex: 0 1 23%;
   width: 23%;
   margin-bottom: 1.5rem;
-  border: 1px solid #c8c8c8; }
+  border: 1px solid #e1e1e1; }
 
 .post-type-archive .entry-header {
   height: 250px;
@@ -1333,11 +1342,12 @@ object {
   padding: 0.75rem 1.5rem 0 1.5rem;
   margin-left: 0; }
 
-.post-type-archive ul.leaders li:after,
-.tax-product-type ul.leaders li:after {
+.post-type-archive ul.leaders li:before,
+.tax-product-type ul.leaders li:before {
   float: left;
-  width: 0;
+  min-width: 10px;
   white-space: nowrap;
+  display: inline;
   content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "; }
 
 .post-type-archive ul.leaders span:first-child,
@@ -1351,6 +1361,26 @@ object {
   background: #fff;
   position: relative;
   z-index: 1; }
+
+.dot-leaders {
+  display: -ms-flexbox;
+  display: flex; }
+
+.dot-leaders .entry-title,
+.dot-leaders .price {
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto; }
+
+.dot-leaders .dots {
+  -ms-flex: 0 1 auto;
+      flex: 0 1 auto; }
+
+.dots::before {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "; }
 
 .single.single-product .entry-title {
   margin-top: 0;
@@ -1616,7 +1646,7 @@ object {
   margin-top: 0; }
 
 .archive.date .page-header {
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #e1e1e1;
   margin-bottom: 3rem; }
 
 .archive.date .entry-header {

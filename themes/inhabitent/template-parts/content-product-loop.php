@@ -17,11 +17,19 @@
 </div><!-- entry-header -->
 
 <div class="entry-content">
-	<ul class="leaders">
+	<!-- <ul class="leaders">
 		<li>
 			<?php the_title( '<span><h2 class="entry-title">' , '</h2></span>' ); ?>
 			<span><?php echo CFS()->get( 'price' ); ?></span>
 		</li>
-	</ul><!-- leaders -->
+	</ul>leaders -->
+
+	<div class="dot-leaders">
+			<?php the_title( '<span><h2 class="entry-title">' , '</h2></span>' ); ?>
+			<span class="dots"></span>
+			<span><?php echo CFS()->get( 'price' ); ?></span>
+	</div>
+		
+
 </div><!-- entry-content -->
 </article><!-- #post-## -->
