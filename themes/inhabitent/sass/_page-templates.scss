@@ -341,69 +341,14 @@
 			text-align: left;
 			line-height: $font__line-height-body;
 			background: $color__reverse; 	
+			padding-right: 2rem;
 		}
 		.price {
 			float: right;
 			background: $color__reverse; 
 		}
 	}
-	
-	//DOT LEADERS (https://www.w3.org/Style/Examples/007/leaders.en.html)
-	ul.leaders {
-		max-width: 100%;
-		padding: 0;
-		overflow-x: hidden;
-		list-style: none;
-		padding: 0.75rem 1.5rem 0 1.5rem;
-		margin-left: 0;
-	}
-	ul.leaders li:before {
-		float: left;
-		min-width: 10px;
-		white-space: nowrap;
-		display: inline;
-		content:
-	 ". . . . . . . . . . . . . . . . . . . . "
-	 ". . . . . . . . . . . . . . . . . . . . "
-	 ". . . . . . . . . . . . . . . . . . . . "
-	 ". . . . . . . . . . . . . . . . . . . . ";
-	}
-
-	ul.leaders span:first-child {
-		margin: 0;
-		background-color: $color__reverse;}
-	ul.leaders span + span {
-		float: right;
-		// padding-left: 0.33em;
-		background: $color__reverse;
-		position: relative;
-		z-index: 1
-	}
 }
-
-
-.dot-leaders {
-	display: flex;
-  }
-  .dot-leaders .entry-title,
-  .dot-leaders .price {
-	flex: 1 0 auto;
-  }
-  .dot-leaders .dots {
-	flex: 0 1 auto;
-  }
-  .dots::before {
-	display: block;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: clip;
-	content: 
-	  ". . . . . . . . . . . . . . . . . . . . "
-	  ". . . . . . . . . . . . . . . . . . . . "
-	  ". . . . . . . . . . . . . . . . . . . . "
-	  ". . . . . . . . . . . . . . . . . . . . "
-  }
-
 
 //SINGLE PRODUCT 
 

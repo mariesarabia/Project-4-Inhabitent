@@ -1327,60 +1327,12 @@ object {
     display: inline;
     text-align: left;
     line-height: 1.75;
-    background: #fff; }
+    background: #fff;
+    padding-right: 2rem; }
   .post-type-archive .entry-content .price,
   .tax-product-type .entry-content .price {
     float: right;
     background: #fff; }
-
-.post-type-archive ul.leaders,
-.tax-product-type ul.leaders {
-  max-width: 100%;
-  padding: 0;
-  overflow-x: hidden;
-  list-style: none;
-  padding: 0.75rem 1.5rem 0 1.5rem;
-  margin-left: 0; }
-
-.post-type-archive ul.leaders li:before,
-.tax-product-type ul.leaders li:before {
-  float: left;
-  min-width: 10px;
-  white-space: nowrap;
-  display: inline;
-  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "; }
-
-.post-type-archive ul.leaders span:first-child,
-.tax-product-type ul.leaders span:first-child {
-  margin: 0;
-  background-color: #fff; }
-
-.post-type-archive ul.leaders span + span,
-.tax-product-type ul.leaders span + span {
-  float: right;
-  background: #fff;
-  position: relative;
-  z-index: 1; }
-
-.dot-leaders {
-  display: -ms-flexbox;
-  display: flex; }
-
-.dot-leaders .entry-title,
-.dot-leaders .price {
-  -ms-flex: 1 0 auto;
-      flex: 1 0 auto; }
-
-.dot-leaders .dots {
-  -ms-flex: 0 1 auto;
-      flex: 0 1 auto; }
-
-.dots::before {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;
-  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "; }
 
 .single.single-product .entry-title {
   margin-top: 0;
